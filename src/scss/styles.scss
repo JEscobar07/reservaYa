@@ -13,14 +13,34 @@ Fecha: 16/05/2024
 @import "bootstrap/scss/bootstrap";
 
 //color palette
-:root{
+:root {
     --white: #ffffff;
     --orange: #fa8334;
-    --blue: #0b38ba;
+    --blue: #000080;
     --black: #000000;
     --gray: #edefeb;
+    --blue_hover: #0000B3;
+    --gray_hover: #F2F2F3;
 }
 
-*{
+* {
     font-family: "Teachers", sans-serif;
+}
+
+.nav__item:hover {
+    background-color: var(--gray_hover);
+}
+
+.nav__button {
+    background-color: var(--blue);
+    color: var(--white);
+    height: 7vh;
+    width: 6vw;
+    font-size: 1em;
+}
+
+
+.nav__button:hover {
+    background-color: var(--blue_hover);
+    color: var(--white);
 }
