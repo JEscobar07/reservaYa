@@ -28,59 +28,40 @@ Fecha: 16/05/2024
 }
 
 /* General styles */
+
+// Navigation bar styles
 .navbar {
     background-color: var(--white);
 }
 
-.nav__logo {
-    min-width: 85vw;
-}
-
-.logo__img {
-    min-width:28%;
-}
-
-.nav__buttons {
-    margin-left: 5%;
-    margin-right: auto;
-}
-
-.nav__item:hover {
-    background-color: var(--gray_hover);
-}
-
-.nav__div-a {
+.nav__a-btn{
+    text-decoration: none;
     background-color: var(--blue);
-    width: 15%;
-    min-width: 10%;
-    min-height: 45px;
-    padding: 0 2em;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 5em;
+    width: 8em;
+    max-width: 9em;
+    min-height: 3em;
+    margin: auto;
 }
 
-.nav__div-a:hover {
+.nav__a-btn:hover{
     background-color: var(--blue_hover);
 }
 
-.nav__a {
-    text-decoration: none;
-    color: var(--white);
-    align-items: center;
+.nav__a{
+    max-width: 17%;
+    min-width: 11em;
 }
 
-.open-menu {
-    display: none;
+.nav-link:hover{
+    background-color:var(--gray_hover);
 }
 
-/* Media query for screens smaller than 600px */
-@media screen and (max-width: 600px) {
 
-    .nav__list {
-        display: none; 
-    }
 
-    .open-menu {
-        display: block;
-    }
 
-    
-}
+
