@@ -27,20 +27,60 @@ Fecha: 16/05/2024
     font-family: "Teachers", sans-serif;
 }
 
+/* General styles */
+.navbar {
+    background-color: var(--white);
+}
+
+.nav__logo {
+    min-width: 85vw;
+}
+
+.logo__img {
+    min-width:28%;
+}
+
+.nav__buttons {
+    margin-left: 5%;
+    margin-right: auto;
+}
+
 .nav__item:hover {
     background-color: var(--gray_hover);
 }
 
-.nav__button {
+.nav__div-a {
     background-color: var(--blue);
-    color: var(--white);
-    height: 7vh;
-    width: 6vw;
-    font-size: 1em;
+    width: 15%;
+    min-width: 10%;
+    min-height: 45px;
+    padding: 0 2em;
 }
 
-
-.nav__button:hover {
+.nav__div-a:hover {
     background-color: var(--blue_hover);
+}
+
+.nav__a {
+    text-decoration: none;
     color: var(--white);
+    align-items: center;
+}
+
+.open-menu {
+    display: none;
+}
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+
+    .nav__list {
+        display: none; 
+    }
+
+    .open-menu {
+        display: block;
+    }
+
+    
 }
