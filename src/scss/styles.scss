@@ -21,12 +21,12 @@ Fecha: 16/05/2024
     --gray: #edefeb;
     --blue_hover: #0000B3;
     --gray_hover: #F2F2F3;
+    --color_btn-instagram: #F00075;
 }
 
 * {
     font-family: "Teachers", sans-serif;
 }
-<<<<<<< HEAD
 
 /* General styles */
 
@@ -63,25 +63,11 @@ Fecha: 16/05/2024
 }
 
 
-
-
-
-=======
-/*footer class*/
-.footerr{
-    background-color: black;
-    color: whitesmoke;
-    text-align: center;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    font-size:x-large;
-}
-
 /*title configuration*/
 .sizeText{
     font-size: 70px;
     font-weight: bold;
-    color: black;
+    color: var(--black);
     text-align: center;
     margin-bottom: 20px;
 }
@@ -94,8 +80,8 @@ Fecha: 16/05/2024
 }
 
 .fa-facebook-f{
-    color: whitesmoke;
-    background-color: #0B60CB;
+    color: var(--white);
+    background-color: var(--blue_hover);
     border-radius: 50%;
     padding: 10px 10px;
     width: 60px;
@@ -105,8 +91,8 @@ Fecha: 16/05/2024
 }
 
 .fa-twitter{
-    color: whitesmoke;
-    background-color: #0C85D0;
+    color: var(--white);
+    background-color: var(--blue_hover);
     border-radius: 50%;
     padding: 10px 10px;
     width: 60px;
@@ -116,8 +102,8 @@ Fecha: 16/05/2024
 }
 
 .fa-instagram{
-    color: whitesmoke;
-    background-color: #F00075;
+    color: var(--white);
+    background-color:var(--color_btn-instagram) ;
     border-radius: 50%;
     padding: 10px 10px;
     width: 60px;
@@ -127,8 +113,8 @@ Fecha: 16/05/2024
 }
 
 .fa-tiktok{
-    color: whitesmoke;
-    background-color: #000000;
+    color: var(--white);
+    background-color: var(--black);
     border-radius: 50%;
     padding: 10px 10px;
     width: 60px;
@@ -136,4 +122,13 @@ Fecha: 16/05/2024
     font-size: 40px;
     margin: 0px 10px;
 }
->>>>>>> 1bdace99e9d60d246861452ea36b1141403a3c20
+
+/*footer class*/
+.footerr{
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    font-size:x-large;
+}
