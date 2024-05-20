@@ -35,29 +35,35 @@ Fecha: 16/05/2024
 
     <!-- Page header section -->
     <header>
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Navigation bar -->
+        <nav class="container navbar navbar-expand-lg fixed-top mt-2 rounded-pill">
+            <div class="container-fluid px-4">
+                <a href="./index.html" class="nav__a">
+                    <img src="./public/img/logoReservaYa.webp" class="img-fluid w-75 float-start logo__img" alt="logo of the site">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 gap-4 pe-3 ">
+                                <li class="nav-item">
+                                    <a class="nav-link rounded active fs-5" aria-current="page" href="#">Buscar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link rounded active fs-5" href="#">Publicar</a>
+                                </li>
+                        </ul>
+                        <ul class="navbar-nav flex-grow-1 justify-content-end ">
+                            <li class="nav-item"><a href="#" class="rounded-pill nav__a-btn">Reservar</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -65,8 +71,6 @@ Fecha: 16/05/2024
 
     <!-- Section of the main body of the project -->
     <main>
-
-        <button class="btn btn-primary">Hola</button>
 
         <section>
             <p class="sizeText">Síguenos para más</p>
