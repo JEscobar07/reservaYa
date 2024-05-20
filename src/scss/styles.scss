@@ -13,14 +13,55 @@ Fecha: 16/05/2024
 @import "bootstrap/scss/bootstrap";
 
 //color palette
-:root{
+:root {
     --white: #ffffff;
     --orange: #fa8334;
-    --blue: #0b38ba;
+    --blue: #000080;
     --black: #000000;
     --gray: #edefeb;
+    --blue_hover: #0000B3;
+    --gray_hover: #F2F2F3;
 }
 
-*{
+* {
     font-family: "Teachers", sans-serif;
 }
+
+/* General styles */
+
+// Navigation bar styles
+.navbar {
+    background-color: var(--white);
+}
+
+.nav__a-btn{
+    text-decoration: none;
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 5em;
+    width: 8em;
+    max-width: 9em;
+    min-height: 3em;
+    margin: auto;
+}
+
+.nav__a-btn:hover{
+    background-color: var(--blue_hover);
+}
+
+.nav__a{
+    max-width: 17%;
+    min-width: 11em;
+}
+
+.nav-link:hover{
+    background-color:var(--gray_hover);
+}
+
+
+
+
+
