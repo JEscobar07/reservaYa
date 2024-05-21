@@ -8,7 +8,6 @@ Fecha: 16/05/2024
 <html lang="en">
 
 <head>
-
   <!-- Project metadata -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,41 +26,46 @@ Fecha: 16/05/2024
   <meta name="googlebot" content="index,follow" />
   <meta name="revisit-after" content="15days" />
   <link rel="shortcut icon" href="./public/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <title>ReservaYa</title>
 </head>
 
 <body>
-
   <!-- Page header section -->
   <header>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navigation bar -->
+    <nav class="container navbar navbar-expand-lg fixed-top mt-2 rounded-pill">
+      <div class="container-fluid px-4">
+        <a href="./index.html" class="nav__a">
+          <img src="./public/img/logoReservaYa.webp" class="img-fluid w-75 float-start logo__img"
+            alt="logo of the site">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-4 pe-3 ">
+              <li class="nav-item">
+                <a class="nav-link rounded active fs-5" aria-current="page" href="#">Buscar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded active fs-5" href="#">Publicar</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-grow-1 justify-content-end ">
+              <li class="nav-item"><a href="#" class="rounded-pill nav__a-btn">Reservar</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
   </header>
-
   <!-- Section of the main body of the project -->
   <main>
     <!-- section 1 of the main body -->
@@ -74,7 +78,8 @@ Fecha: 16/05/2024
           <h1 class="fw-bolder display-1 hero-section__container-text__title mb-4">
             Reserva Ahora
           </h1>
-          <p class="fs-3 mb-4 hero-section__container-text__text">Descubre y reserva una amplia gama de espacios únicos con ReservaYa. ¡Un nuevo lugar te espera!</p>
+          <p class="fs-3 mb-4 hero-section__container-text__text">Descubre y reserva una amplia gama de espacios únicos
+            con ReservaYa. ¡Un nuevo lugar te espera!</p>
           <button class="py-3 px-4 rounded-5 fs-4 fw-bold hero-section__container-text__buttom">Empieza Ya</button>
         </div>
       </article>
@@ -82,23 +87,41 @@ Fecha: 16/05/2024
 
     <!-- form section -->
     <section id=form class="form-section">
-        <h2 class="display-5 text-center form-section__title fw-bold">¿Presentas alguna novedad en la plataforma? ¡Comunícate con nosotros!</h2>
+      <h2 class="display-5 text-center form-section__title fw-bold">¿Presentas alguna novedad en la plataforma?
+        ¡Comunícate con nosotros!</h2>
       <article class="form__container fs-5 fw-bold">
         <div class="w-100 form__container-split">
           <input type="text" placeholder="Nombre" class="form__container-split-item">
           <input type="number" placeholder="Teléfono" class="form__container-split-item">
         </div>
-        <input type="email" placeholder="Email" class="form__container-item"/>
-        <input type="text" placeholder="Mensaje" class="form__container-item"/>
-        <button type="submit" class="py-3 px-4 rounded-5 fs-4 fw-bold form-section__container-text__buttom" placeholder="">Enviar Mensaje</button>
+        <input type="email" placeholder="Email" class="form__container-item" />
+        <input type="text" placeholder="Mensaje" class="form__container-item" />
+        <button type="submit" class="py-3 px-4 rounded-5 fs-4 fw-bold form-section__container-text__buttom"
+          placeholder="">Enviar Mensaje</button>
       </article>
     </section>
+
+
+    <section>
+      <p class="sizeText">Síguenos para más</p>
+
+      <div class="buttons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </section>
+
   </main>
 
   <!-- Project footer section -->
   <footer>
-
+    <div class="footerr">
+      <p> © 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
+    </div>
   </footer>
+
 
   <!-- Main JavaScript module for the project -->
   <script type="module" src="./src/js/main.js"></script>
