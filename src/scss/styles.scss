@@ -7,7 +7,7 @@ Fecha: 16/05/2024
 // import normalize.css file ,bootstrap icons and google font 
 @import url(./normalize.scss);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
@@ -15,7 +15,7 @@ Fecha: 16/05/2024
 //color palette
 :root {
     --white: #ffffff;
-    --orange: #fa8334;
+    --orange: #ff7f00;
     --blue: #000080;
     --black: #000000;
     --gray: #edefeb;
@@ -25,7 +25,8 @@ Fecha: 16/05/2024
 }
 
 * {
-    font-family: "Teachers", sans-serif;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
 }
 
 /* General styles */
@@ -62,6 +63,35 @@ Fecha: 16/05/2024
     background-color: var(--gray_hover);
 }
 
+// styles of the section highlights
+
+.article-highlights{
+    align-content: center;
+}
+
+.highlights__h2{
+    color: var(--orange);
+    font-size: large;
+}
+
+.highlights__card-h3{
+    color: var(--orange);
+}
+
+.highlights__card{
+    min-width: 19em;
+    max-width: 29em;
+    text-align: center;
+}
+
+.highlights__card-img{
+    min-height: auto;
+    height: 280px;
+    margin: auto;
+    min-width: 80%;
+    width: 97%;
+}
+
 // section 1 styles 
 .hero-section__container {
     background-color: var(--gray);
@@ -87,7 +117,7 @@ Fecha: 16/05/2024
 }
 
 .video {
-    object-fit: fill !important;
+    object-fit: cover !important;
 }
 
 .hero-section__container-text__title {
