@@ -36,7 +36,7 @@ Fecha: 16/05/2024
     background-color: var(--white);
 }
 
-.nav__a-btn{
+.nav__a-btn {
     text-decoration: none;
     background-color: var(--blue);
     color: var(--white);
@@ -50,17 +50,17 @@ Fecha: 16/05/2024
     margin: auto;
 }
 
-.nav__a-btn:hover{
+.nav__a-btn:hover {
     background-color: var(--blue_hover);
 }
 
-.nav__a{
+.nav__a {
     max-width: 17%;
     min-width: 11em;
 }
 
-.nav-link:hover{
-    background-color:var(--gray_hover);
+.nav-link:hover {
+    background-color: var(--gray_hover);
 }
 
 // styles of the section highlights
@@ -86,10 +86,120 @@ Fecha: 16/05/2024
     width: 97%;
 }
 
+// section 1 styles 
+.hero-section__container {
+    background-color: var(--gray);
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
 
+.hero-section__container-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    padding-bottom: 1.5rem;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+}
+
+.video {
+    object-fit: fill !important;
+}
+
+.hero-section__container-text__title {
+    color: var(--orange);
+    text-shadow: -2px 2px 2px var(--black);
+}
+
+.hero-section__container-text__text {
+    color: var(--white);
+    text-shadow: -2px 2px 2px var(--black);
+    font-weight: 700;
+}
+
+.hero-section__container-text__buttom {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+// form styles
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray);
+
+}
+
+.form-section__title {
+    width: 60%;
+}
+
+.form__container {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.form__container-split {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form__container-split-item {
+    width: 49%;
+    border-radius: 25px;
+    border: none;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 2rem;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
+
+    &:hover {
+        border: 1px var(--blue) solid;
+        cursor: pointer;
+    }
+
+}
+
+.form__container-item {
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 2rem;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
+
+    &:hover {
+        border: 1px var(--blue) solid;
+        cursor: pointer;
+    }
+
+}
+
+.form-section__container-text__buttom {
+    background-color: var(--blue);
+    color: var(--white);
+}
 
 /*title configuration*/
-.sizeText{
+.sizeText {
     font-size: 70px;
     font-weight: bold;
     color: var(--black);
@@ -98,62 +208,62 @@ Fecha: 16/05/2024
 }
 
 /*configuration of the buttons*/
-.buttons{
+.buttons {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
 }
 
-.fa-facebook-f{
+.fa-facebook-f {
     color: var(--white);
     background-color: var(--blue_hover);
     border-radius: 50%;
     padding: 10px 10px;
     width: 60px;
-    height: 60px; 
+    height: 60px;
     font-size: 40px;
     margin: 0px 10px;
 }
 
-.fa-twitter{
+.fa-twitter {
     color: var(--white);
     background-color: var(--blue_hover);
     border-radius: 50%;
     padding: 10px 10px;
     width: 60px;
-    height: 60px; 
+    height: 60px;
     font-size: 40px;
     margin: 0px 10px;
 }
 
-.fa-instagram{
+.fa-instagram {
     color: var(--white);
-    background-color:var(--color_btn-instagram) ;
+    background-color: var(--color_btn-instagram);
     border-radius: 50%;
     padding: 10px 10px;
     width: 60px;
-    height: 60px; 
+    height: 60px;
     font-size: 40px;
     margin: 0px 10px;
 }
 
-.fa-tiktok{
+.fa-tiktok {
     color: var(--white);
     background-color: var(--black);
     border-radius: 50%;
     padding: 10px 10px;
     width: 60px;
-    height: 60px; 
+    height: 60px;
     font-size: 40px;
     margin: 0px 10px;
 }
 
 /*footer class*/
-.footerr{
+.footerr {
     background-color: var(--black);
     color: var(--white);
     text-align: center;
     padding-bottom: 100px;
     padding-top: 100px;
-    font-size:x-large;
+    font-size: x-large;
 }
