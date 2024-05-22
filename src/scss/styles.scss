@@ -136,6 +136,63 @@ Fecha: 16/05/2024
     color: var(--white);
 }
 
+/*Section 2 of the main*/
+.sizeTextSect2 {
+    font-size: 390%;
+    font-weight: bold;
+    color: var(--orange);
+    margin-bottom: 20px;
+}
+
+.section2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 33px;
+    padding-right: 33px;
+    background-color: #fbf7ee;
+}
+
+.section2-art1-div1 {
+    width: 70%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-right: 48px;
+    padding-left: 48px;
+}
+
+.section2-art1-div2 {
+    width: 48%;
+}
+
+.section2-art1-div2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+
+@media (width < 1200px) {
+    .section2-art1 {
+        flex-direction: column !important;
+    }
+    .section2-art1-div2 {
+        width: 100%;
+        height: 20rem;
+    }
+    .section2-art1-div1 {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+    .sizeTextSect2 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: var(--orange);
+        margin-bottom: 20px;
+    }
+}
+
 // form styles
 .form-section {
     display: flex;
