@@ -64,8 +64,14 @@ Fecha: 16/05/2024
 }
 
 // styles of the section highlights
+
+.article-highlights{
+    align-content: center;
+}
+
 .highlights__h2{
     color: var(--orange);
+    font-size: large;
 }
 
 .highlights__card-h3{
@@ -74,13 +80,13 @@ Fecha: 16/05/2024
 
 .highlights__card{
     min-width: 19em;
-    max-width: 22em;
+    max-width: 29em;
     text-align: center;
 }
 
 .highlights__card-img{
     min-height: auto;
-    height: 250px;
+    height: 280px;
     margin: auto;
     min-width: 80%;
     width: 97%;
@@ -111,7 +117,7 @@ Fecha: 16/05/2024
 }
 
 .video {
-    object-fit: fill !important;
+    object-fit: cover !important;
 }
 
 .hero-section__container-text__title {
