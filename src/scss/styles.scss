@@ -25,6 +25,7 @@ Fecha: 16/05/2024
     --color-ig: #F00075;
     --color-x:#1da1f2;
     --color-fc:#1778f2;
+    --light-orange: #fbf7ee;
 }
 
 * {
@@ -152,7 +153,7 @@ Fecha: 16/05/2024
     padding-bottom: 80px;
     padding-left: 33px;
     padding-right: 33px;
-    background-color: #fbf7ee;
+    background-color: var(--light-orange);
 }
 
 .section2-art1-div1 {
@@ -193,6 +194,68 @@ Fecha: 16/05/2024
         font-weight: bold;
         color: var(--orange);
         margin-bottom: 20px;
+    }
+}
+
+.section5 {
+    background-color: var(--light-orange);   
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section5-art1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 125%;
+}
+
+.section5-art1-div1{
+    margin-bottom: 20px;
+}
+
+.section5-art1-div1-p1{
+    font-size: 2.0rem;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.section5-collapse-body{
+    font-size: 1.4rem;
+}
+
+.accordion-button{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: none;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+@media (width > 900px) {
+    
+    .section5 {
+        background-color: var(--light-orange);    
+    }
+    
+
+
+    .section5-art1-div1{
+        width: 80%;
+        margin-bottom: 1.5%;
+    }
+    
+    .section5-art1-div1-p1{
+        font-size: 2.4rem;
     }
 }
 
