@@ -98,6 +98,24 @@ Fecha: 16/05/2024
     object-fit: cover;
 }
 
+// section 4 of main body
+.opinions__h2{
+    color: var(--orange);
+    font-size: 55px;
+}
+.opinions__div{
+    min-width: 15em;
+    width: 30%;
+    margin: 0 auto 20px auto;
+}
+
+.opinions__img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 
 // section 1 styles 
 .hero-section__container {
