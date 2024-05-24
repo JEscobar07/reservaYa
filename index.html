@@ -6,503 +6,360 @@ Fecha: 16/05/2024
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Project metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Plataforma de reserva en línea que facilita la gestión de espacios para diversas actividades. Desde eventos recreativos hasta eventos organizacionales, reservaYa permite a compañías y personas independientes subir sus espacios disponibles, que luego pueden ser alquilados por otras personas y empresas según sus necesidades."
-    />
-    <meta
-      name="keywords"
-      content="Jonathan, Escobar, David, Medina, Natalia, Chica, Alejo, Castrillon, JEscobar07, CODEALEJO, medi77na, natacrdz, reservas, espacios, personas, compañias, alquiler, eventos, lugares"
-    />
-    <meta name="sitedomain" content="https://reservaYa.com/" />
-    <meta name="organization" content="RIWI_GATES" />
-    <meta
-      name="author"
-      content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez"
-    />
-    <meta
-      name="designer"
-      content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez"
-    />
-    <meta
-      name="copyright"
-      content="© 2024 Riwi. Todos los derechos reservados."
-    />
-    <meta name="robots" content="index,follow" />
-    <meta name="googlebot" content="index,follow" />
-    <meta name="revisit-after" content="15days" />
-    <link
-      rel="shortcut icon"
-      href="./public/icons/favicon.ico"
-      type="image/x-icon"
-    />
-    <title>ReservaYa</title>
-  </head>
 
-  <body>
-    <!-- Page header section -->
-    <header>
-      <!-- Navigation bar -->
-      <nav
-        class="container navbar navbar-expand-lg fixed-top mt-2 rounded-pill"
-      >
-        <div class="container-fluid px-4">
-          <a href="./index.html" class="nav__a">
-            <img
-              src="./public/img/logoReservaYa.webp"
-              class="img-fluid w-75 float-start logo__img"
-              alt="logo of the site"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 gap-4 pe-3">
-                <li class="nav-item">
-                  <a
-                    class="nav-link rounded active fs-5"
-                    aria-current="page"
-                    href="#"
-                    >Buscar</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link rounded active fs-5" href="#">Publicar</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav flex-grow-1 justify-content-end">
-                <li class="nav-item">
-                  <a
-                    href="./src/pages/login.html"
-                    class="rounded-pill nav__a-btn"
-                    >Reservar</a
-                  >
-                </li>
-              </ul>
-            </div>
+<head>
+  <!-- Project metadata -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Plataforma de reserva en línea que facilita la gestión de espacios para diversas actividades. Desde eventos recreativos hasta eventos organizacionales, reservaYa permite a compañías y personas independientes subir sus espacios disponibles, que luego pueden ser alquilados por otras personas y empresas según sus necesidades." />
+  <meta name="keywords"
+    content="Jonathan, Escobar, David, Medina, Natalia, Chica, Alejo, Castrillon, JEscobar07, CODEALEJO, medi77na, natacrdz, reservas, espacios, personas, compañias, alquiler, eventos, lugares" />
+  <meta name="sitedomain" content="https://reservaYa.com/" />
+  <meta name="organization" content="RIWI_GATES" />
+  <meta name="author"
+    content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez" />
+  <meta name="designer"
+    content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez" />
+  <meta name="copyright" content="© 2024 Riwi. Todos los derechos reservados." />
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
+  <meta name="revisit-after" content="15days" />
+  <link rel="shortcut icon" href="./public/icons/favicon.ico" type="image/x-icon" />
+  <title>ReservaYa</title>
+</head>
+
+<body>
+  <!-- Page header section -->
+  <header>
+    <!-- Navigation bar -->
+    <nav class="container navbar navbar-expand-lg fixed-top mt-2 rounded-pill">
+      <div class="container-fluid px-4">
+        <a href="./index.html" class="nav__a">
+          <img src="./public/img/logoReservaYa.webp" class="img-fluid w-75 float-start logo__img"
+            alt="logo of the site" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-4 pe-3">
+              <li class="nav-item">
+                <a class="nav-link rounded active fs-5" aria-current="page" href="#">Buscar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded active fs-5" href="#">Publicar</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-grow-1 justify-content-end">
+              <li class="nav-item">
+                <a href="./src/pages/login.html" class="rounded-pill nav__a-btn">Reservar</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Section of the main body of the project -->
-    <main>
+  <!-- Section of the main body of the project -->
+  <main>
 
-      <!-- section 1 of the main body -->
-      <section id="1">
-        <article class="hero-section__container">
-          <div class="video-container">
-            <video
-              src="/public/video/spacesBackground.mp4"
-              autoplay
-              muted
-              loop
-              class="w-100 h-100 video"
-            ></video>
-          </div>
-          <div class="mx-5 hero-section__container-text">
-            <h1
-              class="fw-bolder display-1 hero-section__container-text__title mb-4"
-            >
-              Reserva Ahora
-            </h1>
-            <p class="fs-3 mb-4 hero-section__container-text__text">
-              Descubre y reserva una amplia gama de espacios únicos con
-              ReservaYa. ¡Un nuevo lugar te espera!
+    <!-- section 1 of the main body -->
+    <section id="1">
+      <article class="hero-section__container">
+        <div class="video-container">
+          <video src="/public/video/spacesBackground.mp4" autoplay muted loop class="w-100 h-100 video"></video>
+        </div>
+        <div class="mx-5 hero-section__container-text">
+          <h1 class="fw-bolder display-1 hero-section__container-text__title mb-4">
+            Reserva Ahora
+          </h1>
+          <p class="fs-3 mb-4 hero-section__container-text__text">
+            Descubre y reserva una amplia gama de espacios únicos con
+            ReservaYa. ¡Un nuevo lugar te espera!
+          </p>
+          <button class="py-3 px-4 rounded-5 fs-4 fw-bold hero-section__container-text__buttom border-0">
+            Empieza Ya
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <!-- Section 2 of the main body -->
+    <section class="section2">
+      <article class="card d-flex flex-row-reverse p-0 border-0 rounded-5 section2-art1">
+        <div class="section2-art1-div2">
+          <img src="./public/img/img-sect2.webp" class="card-img-top rounded-5" alt="img-sect2" />
+        </div>
+        <div class="section2-art1-div1">
+          <div class="card-body">
+            <p class="sizeTextSect2">Sobre Nosotros</p>
+            <p class="fs-4">
+              En ReservaYa, creamos una plataforma revolucionaria para que
+              puedas publicar y reservar espacios de forma sencilla y segura.
             </p>
-            <button
-              class="py-3 px-4 rounded-5 fs-4 fw-bold hero-section__container-text__buttom border-0"
-            >
-              Empieza Ya
+            <p class="fs-4">
+              Nuestros anfitriones detallan cada rincón de sus espacios para
+              que puedas encontrar el lugar perfecto para tu próxima aventura.
+            </p>
+            <p class="fs-4">
+              ¡Únete a nuestra comunidad y comienza a explorar hoy mismo!
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Section 3 of the main body -->
+    <section class="container-fluid d-flex justify-content-center mt-3 section-highlights">
+      <article class="container-xxl m-1 d-flex flex-column article-highlights flex-wrap">
+        <article class="text-center">
+          <h2 class="highlights__h2 fw-bold m-5 fs-1">
+            Lugares <br />
+            Destacados
+          </h2>
+        </article>
+        <article class="d-flex gap-3 justify-content-between flex-wrap highlights__cards">
+          <div class="card border-0 my-2 py-2 highlights__card">
+            <img src="./public/img/meetingHall.webp" class="card-img-top img-fluid highlights__card-img rounded-4"
+              alt="..." />
+            <div class="card-body mt-2 mb-5">
+              <h3 class="card-title highlights__card-h3">Publica</h3>
+              <p class="card-text">
+                Crea perfiles detallados de tus espacios para atraer a
+                huéspedes.
+              </p>
+              <a href="#" class="rounded-pill mt-4 nav__a-btn">Ver detalles</a>
+            </div>
+          </div>
+          <div class="card border-0 my-2 py-2 highlights__card">
+            <img src="./public/img/cooworking.webp" class="card-img-top highlights__card-img rounded-4" alt="..." />
+            <div class="card-body mt-2 mb-5">
+              <h3 class="card-title highlights__card-h3">Busca</h3>
+              <p class="card-text">
+                Encuentra el espacio ideal para tu próxima escapada con
+                facilidad.
+              </p>
+              <a href="#" class="rounded-pill mt-4 nav__a-btn">Ver detalles</a>
+            </div>
+          </div>
+          <div class="card border-0 my-2 py-2 highlights__card">
+            <img src="./public/img/eventSpace.webp" class="card-img-top highlights__card-img rounded-4" alt="..." />
+            <div class="card-body mt-2 mb-5">
+              <h3 class="card-title highlights__card-h3">Reseñas</h3>
+              <p class="card-text">
+                Deja tus comentarios y comparte tus experiencias con nuestra
+                comunidad.
+              </p>
+              <a href="#" class="rounded-pill mt-4 nav__a-btn">Ver detalles</a>
+            </div>
+          </div>
+        </article>
+      </article>
+    </section>
+
+    <!-- Section 4 of the main body -->
+    <section>
+      <article class="container-xxl d-flex flex-column text-center">
+        <div class="my-5">
+          <h2 class="fw-bold m-1 text-wrap opinions__h2">Opiniones</h2>
+        </div>
+        <div class="d-flex flex-wrap justify-content-between my-5 gap-4">
+          <div class="opinions__div mb-5 fs-5">
+            <p class="text-wrap">¡Increíble plataforma! Encontré el lugar perfecto para mis vacaciones. ¡Gracias
+              ReservaYa!</p>
+            <img src="./public/img/user1.webp" class="opinions__img my-4" alt="">
+            <h3>María González</h3>
+          </div>
+          <div class="opinions__div mb-5 fs-5">
+            <p class="text-wrap">ReservaYa hizo que mi experiencia de reserva fuera increíblemente fácil. ¡Altamente
+              recomendado!</p>
+            <img src="./public/img/user2.webp" class="opinions__img my-4" alt="">
+            <h3>Juan Pérez</h3>
+          </div>
+          <div class="opinions__div mb-5 fs-5">
+            <p class="text-wrap">¡Los espacios en ReservaYa son únicos y sorprendentes! Definitivamente volveré a
+              reservar.</p>
+            <img src="./public/img/user3.webp" class="opinions__img my-4" alt="">
+            <h3>Laura Martínez</h3>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Section 5 of the main body -->
+    <section class="section5 ">
+      <p class="sizeTextSect2 text-center">Preguntas frecuentes</p>
+      <article class="accordion accordion-flush section5-art1" id="accordionFlushExample">
+        <div class="accordion-item section5-art1-div1 rounded-5 mt-2">
+          <h2 class="accordion-header rounded-5">
+            <button class="accordion-button collapsed rounded-5 " type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <p class="section5-art1-div1-p1 mb-0">
+                ¿Cómo publicar un espacio?
+              </p>
             </button>
-          </div>
-        </article>
-      </section>
-
-      <!-- Section 2 of the main body -->
-      <section class="section2">
-        <article
-          class="card d-flex flex-row-reverse p-0 border-0 rounded-5 section2-art1"
-        >
-          <div class="section2-art1-div2">
-            <img
-              src="./public/img/img-sect2.webp"
-              class="card-img-top rounded-5"
-              alt="img-sect2"
-            />
-          </div>
-          <div class="section2-art1-div1">
-            <div class="card-body">
-              <p class="sizeTextSect2">Sobre Nosotros</p>
-              <p class="fs-4">
-                En ReservaYa, creamos una plataforma revolucionaria para que
-                puedas publicar y reservar espacios de forma sencilla y segura.
-              </p>
-              <p class="fs-4">
-                Nuestros anfitriones detallan cada rincón de sus espacios para
-                que puedas encontrar el lugar perfecto para tu próxima aventura.
-              </p>
-              <p class="fs-4">
-                ¡Únete a nuestra comunidad y comienza a explorar hoy mismo!
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body pb-5 pt-0">
+              <p class="fs-3">
+                Para publicar un espacio, simplemente crea un perfil detallado
+                con fotos y descripciones atractivas.
               </p>
             </div>
-          </div>
-        </article>
-      </section>
-
-      <!-- Section 3 of the main body -->
-      <section
-        class="container-fluid d-flex justify-content-center mt-3 section-highlights"
-      >
-        <article
-          class="container-fluid m-1 d-flex flex-column article-highlights px-5 mx-5 justify-content-between text-center flex-wrap"
-        >
-          <article class="text-center">
-            <h2 class="highlights__h2 fw-bold m-5 fs-1">
-              Lugares <br />
-              Destacados
-            </h2>
-          </article>
-          <article class="d-flex gap-5 justify-content-between flex-wrap">
-            <div class="card border-0 mx-4 my-2 py-2 highlights__card">
-              <img
-                src="./public/img/meetingHall.webp"
-                class="card-img-top img-fluid highlights__card-img rounded-4"
-                alt="..."
-              />
-              <div class="card-body mt-2 mb-5">
-                <h3 class="card-title highlights__card-h3">Publica</h3>
-                <p class="card-text">
-                  Crea perfiles detallados de tus espacios para atraer a
-                  huéspedes.
-                </p>
-                <a href="#" class="rounded-pill mt-4 nav__a-btn"
-                  >Ver detalles</a
-                >
-              </div>
-            </div>
-            <div class="card border-0 mx-4 my-2 py-2 highlights__card">
-              <img
-                src="./public/img/cooworking.webp"
-                class="card-img-top highlights__card-img rounded-4"
-                alt="..."
-              />
-              <div class="card-body mt-2 mb-5">
-                <h3 class="card-title highlights__card-h3">Busca</h3>
-                <p class="card-text">
-                  Encuentra el espacio ideal para tu próxima escapada con
-                  facilidad.
-                </p>
-                <a href="#" class="rounded-pill mt-4 nav__a-btn"
-                  >Ver detalles</a
-                >
-              </div>
-            </div>
-            <div class="card border-0 mx-4 my-2 py-2 highlights__card">
-              <img
-                src="./public/img/eventSpace.webp"
-                class="card-img-top highlights__card-img rounded-4"
-                alt="..."
-              />
-              <div class="card-body mt-2 mb-5">
-                <h3 class="card-title highlights__card-h3">Reseñas</h3>
-                <p class="card-text">
-                  Deja tus comentarios y comparte tus experiencias con nuestra
-                  comunidad.
-                </p>
-                <a href="#" class="rounded-pill mt-4 nav__a-btn"
-                  >Ver detalles</a
-                >
-              </div>
-            </div>
-          </article>
-        </article>
-      </section>
-
-      <!-- Section 4 of the main body -->
-      <section>
-      </section>
-
-      <!-- Section 5 of the main body -->
-      <section class="section5 ">
-        <p class="sizeTextSect2 text-center">Preguntas frecuentes</p>
-        <article
-          class="accordion accordion-flush section5-art1"
-          id="accordionFlushExample"
-        >
-          <div class="accordion-item section5-art1-div1 rounded-5 mt-2">
-            <h2 class="accordion-header rounded-5">
-              <button
-                class="accordion-button collapsed rounded-5 "
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
-                aria-expanded="false"
-                aria-controls="flush-collapseOne"
-              >
-                <p class="section5-art1-div1-p1 mb-0">
-                  ¿Cómo publicar un espacio?
-                </p>
-              </button>
-            </h2>
-            <div
-              id="flush-collapseOne"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body pb-5 pt-0">
-                <p class="fs-3">
-                  Para publicar un espacio, simplemente crea un perfil detallado
-                  con fotos y descripciones atractivas.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item section5-art1-div1 rounded-5 ">
-            <h2 class="accordion-header rounded-5">
-              <button
-                class="accordion-button collapsed rounded-5"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
-                aria-expanded="false"
-                aria-controls="flush-collapseTwo"
-              >
-                <p class="section5-art1-div1-p1 mb-0">
-                  ¿Cómo reservar un espacio?
-                </p>
-              </button>
-            </h2>
-            <div
-              id="flush-collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body pb-5 pt-0">
-                <p class="fs-3">
-                  Reservar un espacio es fácil. Encuentra el lugar perfecto,
-                  elige las fechas y ¡listo
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item section5-art1-div1 rounded-5">
-            <h2 class="accordion-header rounded-5">
-              <button
-                class="accordion-button collapsed rounded-5"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
-                aria-expanded="false"
-                aria-controls="flush-collapseThree"
-              >
-                <p class="section5-art1-div1-p1 mb-0">
-                  ¿Cómo dejar una reseña?
-                </p>
-              </button>
-            </h2>
-            <div
-              id="flush-collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body pb-5 pt-0">
-                <p class="fs-3">
-                  Comparte tu experiencia dejando una reseña honesta y útil para
-                  la comunidad.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item section5-art1-div1 rounded-5 ">
-            <h2 class="accordion-header rounded-5">
-              <button
-                class="accordion-button collapsed rounded-5"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFour"
-                aria-expanded="false"
-                aria-controls="flush-collapseFour"
-              >
-                <p class="section5-art1-div1-p1 mb-0">
-                  ¿Cómo garantizan la seguridad?
-                </p>
-              </button>
-            </h2>
-            <div
-              id="flush-collapseFour"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body pb-5 pt-0">
-                <p class="fs-3">
-                  Priorizamos la seguridad con verificaciones de identidad y
-                  pagos seguros en cada transacción.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item section5-art1-div1 rounded-5 ">
-            <h2 class="accordion-header rounded-5">
-              <button
-                class="accordion-button collapsed rounded-5"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFive"
-                aria-expanded="false"
-                aria-controls="flush-collapseFive"
-              >
-                <p class="section5-art1-div1-p1 mb-0">
-                  ¿Cómo contactar al soporte?
-                </p>
-              </button>
-            </h2>
-            <div
-              id="flush-collapseFive"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body pb-5 pt-0">
-                <p class="fs-3">
-                  Nuestro equipo de soporte está disponible las 24 horas del
-                  día, contáctanos por chat o correo electrónico.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <!-- Section 6 of the main body -->
-      <section class="section06 d-flex justify-content-center">
-        <div class="container-xxl row justify-content-center">
-          <div class="col-md-12 col-lg-10 info__div">
-            <article class="article1-0006 text-center">
-              <h2 class="text-big fw-bold text-center mb-5">
-                ¡Reserva ahora y descubre <br />
-                más!
-              </h2>
-              <p class="fs-3 text-center">
-                Explora una amplia variedad de espacios disponibles para tu
-                próxima reserva. ¡Encuentra el lugar ideal para tu evento y vive
-                una experiencia inolvidable!
-              </p>
-              <div class="d-flex justify-content-center p-3">
-                <button
-                  class="btn-section0006 btn-lg rounded-pill border-0 fs-4 fw-bold p-4"
-                >
-                  Reservar
-                </button>
-              </div>
-            </article>
           </div>
         </div>
-      </section>
 
-      <!-- Section 7 (form) of the main body -->
-      <section id="form" class="form-section">
-        <h2 class="display-5 text-center form-section__title fw-bold">
-          ¿Presentas alguna novedad en la plataforma? ¡Comunícate con nosotros!
-        </h2>
-        <article class="form__container fs-5 fw-bold">
-          <div class="w-100 form__container-split">
-            <input
-              type="text"
-              placeholder="Nombre"
-              class="form__container-split-item"
-            />
-            <input
-              type="number"
-              placeholder="Teléfono"
-              class="form__container-split-item"
-            />
+        <div class="accordion-item section5-art1-div1 rounded-5 ">
+          <h2 class="accordion-header rounded-5">
+            <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <p class="section5-art1-div1-p1 mb-0">
+                ¿Cómo reservar un espacio?
+              </p>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body pb-5 pt-0">
+              <p class="fs-3">
+                Reservar un espacio es fácil. Encuentra el lugar perfecto,
+                elige las fechas y ¡listo
+              </p>
+            </div>
           </div>
-          <input
-            type="email"
-            placeholder="Email"
-            class="form__container-item"
-          />
-          <input
-            type="text"
-            placeholder="Mensaje"
-            class="form__container-item"
-          />
-          <button
-            type="submit"
-            class="py-3 px-4 rounded-5 fs-4 fw-bold form-section__container-text__buttom border-0"
-            placeholder=""
-          >
-            Enviar Mensaje
-          </button>
-        </article>
-      </section>
-
-      <!-- Section 8 (social media) of the main body -->
-      <section class="py-5">
-        <p class="sizeText">Síguenos para más</p>
-
-        <div class="buttons">
-          <a
-            href="https://www.facebook.com/profile.php?id=61560181885006"
-            target="_blank"
-            class="btn-fc"
-            ><i class="bi bi-facebook"></i
-          ></a>
-          <a href="https://x.com/reservaya2" target="_blank" class="btn-twi"
-            ><i class="bi bi-twitter-x"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/ya.reserva/"
-            target="_blank"
-            class="btn-ig"
-            ><i class="bi bi-instagram"></i
-          ></a>
-          <a
-            href="https://www.tiktok.com/@reservaya0?lang=es"
-            target="_blank"
-            class="btn-tt"
-            ><i class="bi bi-tiktok"></i
-          ></a>
         </div>
-      </section>
 
-    </main>
+        <div class="accordion-item section5-art1-div1 rounded-5">
+          <h2 class="accordion-header rounded-5">
+            <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <p class="section5-art1-div1-p1 mb-0">
+                ¿Cómo dejar una reseña?
+              </p>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body pb-5 pt-0">
+              <p class="fs-3">
+                Comparte tu experiencia dejando una reseña honesta y útil para
+                la comunidad.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <!-- Project footer section -->
-    <footer></footer>
+        <div class="accordion-item section5-art1-div1 rounded-5 ">
+          <h2 class="accordion-header rounded-5">
+            <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              <p class="section5-art1-div1-p1 mb-0">
+                ¿Cómo garantizan la seguridad?
+              </p>
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body pb-5 pt-0">
+              <p class="fs-3">
+                Priorizamos la seguridad con verificaciones de identidad y
+                pagos seguros en cada transacción.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <!-- Main JavaScript module for the project -->
-    <script type="module" src="./src/js/main.js"></script>
-  </body>
+        <div class="accordion-item section5-art1-div1 rounded-5 ">
+          <h2 class="accordion-header rounded-5">
+            <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              <p class="section5-art1-div1-p1 mb-0">
+                ¿Cómo contactar al soporte?
+              </p>
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body pb-5 pt-0">
+              <p class="fs-3">
+                Nuestro equipo de soporte está disponible las 24 horas del
+                día, contáctanos por chat o correo electrónico.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Section 6 of the main body -->
+    <section class="section06 d-flex justify-content-center">
+      <div class="container-xxl row justify-content-center">
+        <div class="col-md-12 col-lg-10 info__div">
+          <article class="article1-0006 text-center">
+            <h2 class="text-big fw-bold text-center mb-5">
+              ¡Reserva ahora y descubre <br />
+              más!
+            </h2>
+            <p class="fs-3 text-center">
+              Explora una amplia variedad de espacios disponibles para tu
+              próxima reserva. ¡Encuentra el lugar ideal para tu evento y vive
+              una experiencia inolvidable!
+            </p>
+            <div class="d-flex justify-content-center p-3">
+              <button class="btn-section0006 btn-lg rounded-pill border-0 fs-4 fw-bold p-4">
+                Reservar
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7 (form) of the main body -->
+    <section id="form" class="form-section">
+      <h2 class="display-5 text-center form-section__title fw-bold">
+        ¿Presentas alguna novedad en la plataforma? ¡Comunícate con nosotros!
+      </h2>
+      <article class="form__container fs-5 fw-bold">
+        <div class="w-100 form__container-split">
+          <input type="text" placeholder="Nombre" class="form__container-split-item" />
+          <input type="number" placeholder="Teléfono" class="form__container-split-item" />
+        </div>
+        <input type="email" placeholder="Email" class="form__container-item" />
+        <input type="text" placeholder="Mensaje" class="form__container-item" />
+        <button type="submit" class="py-3 px-4 rounded-5 fs-4 fw-bold form-section__container-text__buttom border-0"
+          placeholder="">
+          Enviar Mensaje
+        </button>
+      </article>
+    </section>
+
+    <!-- Section 8 (social media) of the main body -->
+    <section class="py-5">
+      <p class="sizeText">Síguenos para más</p>
+
+      <div class="buttons">
+        <a href="https://www.facebook.com/profile.php?id=61560181885006" target="_blank" class="btn-fc"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://x.com/reservaya2" target="_blank" class="btn-twi"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.instagram.com/ya.reserva/" target="_blank" class="btn-ig"><i
+            class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com/@reservaya0?lang=es" target="_blank" class="btn-tt"><i
+            class="bi bi-tiktok"></i></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Project footer section -->
+  <footer></footer>
+
+  <!-- Main JavaScript module for the project -->
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
 </html>

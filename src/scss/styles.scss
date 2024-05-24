@@ -68,33 +68,54 @@ Fecha: 16/05/2024
 }
 
 // styles of the section highlights
-
-.article-highlights{
-    align-content: center;
-}
-
-.highlights__h2{
+.highlights__h2 {
     color: var(--orange);
     font-size: large;
 }
 
-.highlights__card-h3{
+.highlights__card-h3 {
     color: var(--orange);
 }
 
-.highlights__card{
-    min-width: 19em;
-    max-width: 29em;
-    text-align: center;
+.highlights__cards{
+    padding: 0 auto;
 }
 
-.highlights__card-img{
+.highlights__card {
+    min-width: 16em;
+    max-width: 38em;
+    text-align: center;
+    flex-basis: 23em;
+    margin: 0 auto;
+}
+
+.highlights__card-img {
     min-height: auto;
     height: 280px;
     margin: auto;
-    min-width: 80%;
+    min-width: 90%;
     width: 97%;
+    object-fit: cover;
 }
+
+// section 4 of main body
+.opinions__h2{
+    color: var(--orange);
+    font-size: 55px;
+}
+.opinions__div{
+    min-width: 15em;
+    width: 30%;
+    margin: 0 auto 20px auto;
+}
+
+.opinions__img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 
 // section 1 styles 
 .hero-section__container {
