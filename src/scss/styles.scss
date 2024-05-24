@@ -68,33 +68,36 @@ Fecha: 16/05/2024
 }
 
 // styles of the section highlights
-
-.article-highlights{
-    align-content: center;
-}
-
-.highlights__h2{
+.highlights__h2 {
     color: var(--orange);
     font-size: large;
 }
 
-.highlights__card-h3{
+.highlights__card-h3 {
     color: var(--orange);
 }
 
-.highlights__card{
-    min-width: 19em;
-    max-width: 29em;
-    text-align: center;
+.highlights__cards{
+    padding: 0 auto;
 }
 
-.highlights__card-img{
+.highlights__card {
+    min-width: 16em;
+    max-width: 38em;
+    text-align: center;
+    flex-basis: 23em;
+    margin: 0 auto;
+}
+
+.highlights__card-img {
     min-height: auto;
     height: 280px;
     margin: auto;
-    min-width: 80%;
+    min-width: 90%;
     width: 97%;
+    object-fit: cover;
 }
+
 
 // section 1 styles 
 .hero-section__container {
