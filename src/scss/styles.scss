@@ -178,16 +178,16 @@ Fecha: 16/05/2024
     .section2-art1 {
         flex-direction: column !important;
     }
-    .section2-art1-div2 {
-        width: 100%;
-        height: 20rem;
-    }
     .section2-art1-div1 {
         width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-right: 18px;
         padding-left: 18px;
+    }
+    .section2-art1-div2 {
+        width: 100%;
+        height: 20rem;
     }
     .sizeTextSect2 {
         font-size: 3rem;
@@ -197,6 +197,7 @@ Fecha: 16/05/2024
     }
 }
 
+/*Section 5 of the main*/
 .section5 {
     background-color: var(--light-orange);   
     padding-left: 16px;
@@ -209,11 +210,11 @@ Fecha: 16/05/2024
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    width: 125%;
+    align-items: center;
 }
 
 .section5-art1-div1{
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -237,20 +238,19 @@ Fecha: 16/05/2024
     color: var(--black);
     box-shadow: none;
 }
+
 .accordion-button:focus{
     box-shadow: none;
 }
 
-@media (width > 900px) {
+@media (width > 950px) {
     
     .section5 {
         background-color: var(--light-orange);    
     }
-    
-
 
     .section5-art1-div1{
-        width: 80%;
+        width: 65%;
         margin-bottom: 1.5%;
     }
     
@@ -259,7 +259,7 @@ Fecha: 16/05/2024
     }
 }
 
-/*styles section 0006*/
+/*Section 6 of the main*/
 .text-big {
     font-size: 60px;
     padding-top: 30px;
@@ -277,6 +277,7 @@ Fecha: 16/05/2024
     margin-right: -20px;
     background-color: var(--yellow);
 }
+
 .btn-section0006{
     background-color: var(--blue);
     color: var(--gray);
@@ -293,7 +294,7 @@ Fecha: 16/05/2024
 }
 
 
-// form styles
+/*Section 7 (form) of the main*/
 .form-section {
     display: flex;
     flex-direction: column;
@@ -405,7 +406,6 @@ Fecha: 16/05/2024
     background-color: var(--black);
 }
 
-
 /*footer class*/
 .footerr {
     background-color: var(--black);
@@ -416,7 +416,7 @@ Fecha: 16/05/2024
     font-size: x-large; 
 }
 
-/*section login*/
+/*section login page login.thml*/
 .img-login{
     background-color: var(--gray);
     display: block; 
