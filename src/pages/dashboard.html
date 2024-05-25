@@ -1,0 +1,102 @@
+<!--
+Clan: Clan Gates
+Grupo: Charlie - ReservaYa
+Fecha: 16/05/2024
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Project metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Plataforma de reserva en línea que facilita la gestión de espacios para diversas actividades. Desde eventos recreativos hasta eventos organizacionales, reservaYa permite a compañías y personas independientes subir sus espacios disponibles, que luego pueden ser alquilados por otras personas y empresas según sus necesidades." />
+    <meta name="keywords"
+        content="Jonathan, Escobar, David, Medina, Natalia, Chica, Alejo, Castrillon, JEscobar07, CODEALEJO, medi77na, natacrdz, reservas, espacios, personas, compañias, alquiler, eventos, lugares" />
+    <meta name="sitedomain" content="https://reservaYa.com/" />
+    <meta name="organization" content="RIWI_GATES" />
+    <meta name="author"
+        content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez" />
+    <meta name="designer"
+        content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez" />
+    <meta name="copyright" content="© 2024 Riwi. Todos los derechos reservados." />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
+    <link rel="shortcut icon" href="../../public/icons/favicon.ico" type="image/x-icon" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section class="container-xxl">
+            <article class="container-fluid container__cards-reservations d-flex flex-wrap">
+                <!-- <td>${element.id}</td>
+                <td>${element.name}</td>
+                <td>
+                    <img width="100px" src=${element.image} alt=${element.name}>
+                </td>
+                <td>${element.creationAt}</td>
+                <td>${element.updatedAt}</td>
+                <td>
+                    <button type="button" data-id=${element.id} class="btn btn-warning">Edit</button>
+                    <button type="button" data-id=${element.id} class="btn btn-danger">Delete</button>
+                </td> -->
+<!-- 
+                cardsReservation.innerHTML += `
+                <div class="card text-center my-5 rounded cards__reservation">
+                    <div class="cards__reservation-img mb-3">
+                        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-inner reservation__carousel-img">`
+                                const carouselImg = document.querySelector(".reservation__carousel-img");
+                                element.photos.forEach(photo => {
+                                    carouselImg.innerHTML +=`
+                                    <div class="carousel-item active" data-bs-interval="5000">
+                                        <img src="${photo}" class="d-block w-100 rounded " alt="...">
+                                    </div>
+                                    `
+                                });
+                                cardsReservation.innerHTML = `
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fs-2 mb-2">${element.spaceType}</h5>
+                        <p class="card-text"><span class="fw-semibold">Dirección: </span>${element.adress}, ${element.city}, ${element.department}.</p>
+                        <p class="card-text"><span class="fw-semibold">Aforo máximo: </span>${element.maximumCapacity} personas.</p>
+                        <a href="./src/pages/login.html" data-id = "${element.id}" class="rounded-pill nav__a-btn">Reservar</a>
+                    </div>
+                </div>
+        `
+        console.log(element.photos[0]);
+    }) -->
+
+            </article>
+    
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>
