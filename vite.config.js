@@ -5,8 +5,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        'login': './src/pages/login.html'
         // Agrega más páginas según sea necesario
+        'login': './src/pages/login.html',
+        'dashboard': './src/pages/dashboard.html'
       },
     },
   },
