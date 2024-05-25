@@ -73,30 +73,26 @@ Fecha: 16/05/2024
         </header>
 
     </header>
-    <main> <!-- form section -->
-        <section id="form" class="form-section row justify-content-center pt-5">
-            <article class="d-flex justify-content-around p-5">
-                <div class="p-2 mx-3 ">
-                    <img src="../../public/img/imglogin.webp" class="img-login" alt="img-sect-login">
-                </div>
-                <div class="form-login p-2 mx-3 fs-5 fw-bold col-12 col-lg item-wrapper ">
-                    <h3 class="display-5 text-center fw-bold">Login</h3>
-                    <a href="../pages/register.html"
-                        class="register-login text-center text-decoration-none">Registrarse</a>
-                    <div class="w-100 gap-3 form__container-split">
-                        <input type="email" placeholder="Email" class="input-login" />
-                        <input type="password" placeholder="Contraseña" class="input-login" />
-                    </div>
-                    <a href="./reservation.html"
-                        class="btn-section0006  py-3 px-4 rounded-5 fs-5 fw-bold border-0 text-decoration-none"
-                        placeholder=""> Ingresar </a>
-
-                </div>
+    <main>
+        <!-- form section -->
+        <section id="form" class="form-section">
+            <h2 class="display-5 text-center form-section__title fw-bold py-4">
+                Nombre del espacio
+            </h2>
+            <article class="form__container fs-5 fw-bold pb-5">
+                <input type="datetime" placeholder="Foto" class="form__container-item" />
+                <input type="number" placeholder="Maximo de personas" class="form__container-item" />
+                <input type="datetime" placeholder="Ubicacion"
+                    class="form__container-item" />
+                <button type="submit"
+                    class="py-3 px-4 rounded-5 fs-4 fw-bold form-section__container-text__buttom border-0"
+                    placeholder="">
+                    Enviar
+                </button>
             </article>
         </section>
     </main>
     <footer>
-
     </footer>
     <script type="module" src="../js/main.js"></script>
 </body>
