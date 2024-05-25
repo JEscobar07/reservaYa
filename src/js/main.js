@@ -10,7 +10,13 @@ import "../scss/styles.scss";
 // Import all of Bootstrap's JS
 import * as bootstrap from "bootstrap";
 
+// mySpace pages variables
+const articleMySpace = document.querySelector("#mySpace-article")
+
+// footer variables
 const footer = document.querySelector("footer");
+
+
 footer.innerHTML = `
     <div class="footerr">
         <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
