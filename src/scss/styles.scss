@@ -15,6 +15,7 @@ Fecha: 16/05/2024
 //color palette
 :root {
     --white: #ffffff;
+    --opacWhite: #ffffffd0;
     --orange: #ff7f00;
     --blue: #000080;
     --black: #000000;
@@ -103,6 +104,7 @@ Fecha: 16/05/2024
     color: var(--orange);
     font-size: 55px;
 }
+
 .opinions__div{
     min-width: 15em;
     width: 30%;
@@ -115,7 +117,6 @@ Fecha: 16/05/2024
     border-radius: 50%;
     object-fit: cover;
 }
-
 
 // section 1 styles 
 .hero-section__container {
@@ -499,8 +500,6 @@ Fecha: 16/05/2024
 
 .section-register-div{
     width: calc(100% - 0px);
-    // margin-left: 200px;
-    // margin-right: 255px;
 }
 
 .section-register-form-h1{
@@ -547,6 +546,35 @@ Fecha: 16/05/2024
 
 }
 
+// mySpace - page
 
+.section1-mySpace{
+    background-color: var(--light-orange);
+    width: 100%;
+    padding-top: 140px;
+    padding-bottom: 120px;
+}
 
+.section1-art1{
+    margin-left: 0px;
+    margin-right: 0px;
+}
 
+.section1-art1-div1{
+    font-size: 250%;
+}
+
+.section1-art1-div2-div1{
+    width: calc(90% - 0px);
+    background-color: var(--opacWhite);
+}
+
+.section1-a{
+    background-color: var(--blue);
+}
+
+@media (width > 860px) {
+    .section1-art1-div2-div1{
+        width: calc(30% - 0px)
+    }
+}
