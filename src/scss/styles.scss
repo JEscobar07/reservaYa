@@ -354,6 +354,13 @@ Fecha: 16/05/2024
 }
 
 /*section login*/
+.father{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 .img-login{
     background-color: var(--gray);
     display: block; 
