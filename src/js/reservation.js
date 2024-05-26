@@ -42,7 +42,7 @@ header.innerHTML = `
             <div class="offcanvas-body">
                 <ul class="navbar-nav flex-grow-1 justify-content-end">
                     <li class="nav-item d-flex gap-4  ">
-                        <button type="button" class="rounded-pill nav__a-btn text-center btn-mySpace">Mis espacios</button>
+                        <button type="button" class="rounded-pill nav__a-btn text-center btn-mySpace">Reservar</button>
                     </li>
                 </ul>
             </div>
@@ -85,5 +85,5 @@ footer.innerHTML = `
 //Listening to events
 btnMySpace = document.querySelector(".btn-mySpace")
 btnMySpace.addEventListener('click',(event) =>{
-    window.location.href = "./mySpace.html"
+    window.location.href = "./dashboard.html"
 })

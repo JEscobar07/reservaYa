@@ -1,13 +1,25 @@
+// autoejecutable function
+(function () {
+    const userOnline = localStorage.getItem("userOnline")
+
+if (userOnline == null) {
+    window.location.href = "/"
+}
+})()
+
 // Import our custom CSS. Fancyapps Library
 import { Fancybox } from "@fancyapps/ui";
-import "@fancyapps/ui/dist/fancybox/fancybox.css";
-
 import { getUrlSpaces } from "./urlData";
 
 
 const cardsReservation = document.querySelector(".container__cards-reservations");
 const URLSpaces = getUrlSpaces();
 
+const btnLogout = document.querySelector("#btn-logout")
+btnLogout.addEventListener("click", () => {
+    localStorage.removeItem("userOnline")
+    window.location.href = "/"
+}) 
 
 //Function for dashboard 
 async function index() {

@@ -11,6 +11,12 @@
       "name": "David Medina",
       "email": "medinastevenurregodavid@gmail.com",
       "password": "12345"
+    },
+    {
+      "id": "9eb4",
+      "email": "jamundi@gmail.com",
+      "phone": "123",
+      "password": "123"
     }
   ],
   "spaces": [
@@ -27,17 +33,6 @@
     },
     {
       "id": "2",
-      "spaceType": "Salón de eventos",
-      "adress": "Carrera 45",
-      "city": "Bogotá",
-      "department": "Cundinamarca",
-      "maximumCapacity": 320,
-      "photos": [
-        "../../public/img/reservation5.webp"
-      ]
-    },
-    {
-      "id": "4",
       "spaceType": "Salón de eventos",
       "adress": "Carrera 45",
       "city": "Bogotá",
