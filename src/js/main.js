@@ -27,7 +27,6 @@ const btnSpace = document.querySelector("#mySpace")
 
 // footer variables
 const footer = document.querySelector("footer");
-
 btnSpace.addEventListener('click', function (event) {
     event.preventDefault()
     window.location.href = "./src/pages/mySpace.html"
