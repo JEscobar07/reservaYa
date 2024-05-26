@@ -1,0 +1,40 @@
+//color palette
+:root {
+    --white: #ffffff;
+    --orange: #ff7f00;
+    --blue: #000080;
+    --black: #000000;
+    --gray: #edefeb;
+    --blue_hover: #0000B3;
+    --gray_hover: #F2F2F3;
+    --yellow: #E9C46A;
+    --color-ig: #F00075;
+    --color-x: #1da1f2;
+    --color-fc: #1778f2;
+    --light-orange: #fbf7ee;
+    --bg-dashboard:#E8EAE6;
+}
+
+// section to display the spaces
+body{
+    background-color: var(--bg-dashboard);
+}
+
+.cards__reservation {
+    background-color: var(--white);
+    flex-basis: 24em;
+    min-width: 20em;
+    max-width: 30em;
+    text-align: center;
+    margin: 0 auto;
+    border: none;
+}
+
+.cards__reservation-img {
+    height: 80%;
+    object-fit: cover;
+}
+
+.cards__color{
+    background-color: var(--white);
+}
