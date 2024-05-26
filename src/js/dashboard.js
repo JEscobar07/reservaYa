@@ -6,7 +6,6 @@ import { getUrlSpaces } from "./urlData";
 
 
 const cardsReservation = document.querySelector(".container__cards-reservations");
-
 const URLSpaces = getUrlSpaces();
 
 
@@ -28,7 +27,7 @@ async function index() {
                         <h5 class="card-title fs-2 mb-2">${element.spaceType}</h5>
                         <p class="card-text"><span class="fw-semibold">Dirección: </span>${element.adress}, ${element.city}, ${element.department}.</p>
                         <p class="card-text"><span class="fw-semibold">Aforo máximo: </span>${element.maximumCapacity} personas.</p>
-                        <a href="./src/pages/login.html" data-id = "${element.id}" class="rounded-pill nav__a-btn">Reservar</a>
+                        <a href="./reservation.html" data-id = "${element.id}" class="rounded-pill nav__a-btn">Reservar</a>
                     </div>
                 </div>
         `
