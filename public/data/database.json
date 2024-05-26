@@ -22,7 +22,9 @@
             "department": "Antioquia",
             "maximumCapacity": 280,
             "photos": [
-                "../../public/img/reservation1.webp"
+                "../../public/img/reservation1.webp",
+                "../../public/img/reservation3.webp",
+                "../../public/img/reservation5.webp"
 
             ]
         },
