@@ -32,64 +32,47 @@ Fecha: 16/05/2024
 <body>
     <header>
 
+        <!-- Navigation bar -->
+        <nav class="container navbar navbar-expand-lg fixed-top mt-2 rounded-pill">
+            <div class="container-fluid px-4">
+                <a href="./index.html" class="nav__a">
+                    <img src="../../public/img/logoReservaYa.webp" class="img-fluid w-75 float-start logo__img"
+                        alt="logo of the site" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 gap-4 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link rounded active fs-5" href="#">Publicar</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav flex-grow-1 justify-content-end">
+                            <li class="nav-item">
+                                <a href="./src/pages/login.html" class="rounded-pill nav__a-btn">LogOut</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
     </header>
 
     <main>
-        <section class="container-xxl">
+        <section class="container-xxl mt-5">
             <article class="container-fluid container__cards-reservations d-flex flex-wrap">
-                <!-- <td>${element.id}</td>
-                <td>${element.name}</td>
-                <td>
-                    <img width="100px" src=${element.image} alt=${element.name}>
-                </td>
-                <td>${element.creationAt}</td>
-                <td>${element.updatedAt}</td>
-                <td>
-                    <button type="button" data-id=${element.id} class="btn btn-warning">Edit</button>
-                    <button type="button" data-id=${element.id} class="btn btn-danger">Delete</button>
-                </td> -->
-<!-- 
-                cardsReservation.innerHTML += `
-                <div class="card text-center my-5 rounded cards__reservation">
-                    <div class="cards__reservation-img mb-3">
-                        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-                            <div class="carousel-inner reservation__carousel-img">`
-                                const carouselImg = document.querySelector(".reservation__carousel-img");
-                                element.photos.forEach(photo => {
-                                    carouselImg.innerHTML +=`
-                                    <div class="carousel-item active" data-bs-interval="5000">
-                                        <img src="${photo}" class="d-block w-100 rounded " alt="...">
-                                    </div>
-                                    `
-                                });
-                                cardsReservation.innerHTML = `
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title fs-2 mb-2">${element.spaceType}</h5>
-                        <p class="card-text"><span class="fw-semibold">Dirección: </span>${element.adress}, ${element.city}, ${element.department}.</p>
-                        <p class="card-text"><span class="fw-semibold">Aforo máximo: </span>${element.maximumCapacity} personas.</p>
-                        <a href="./src/pages/login.html" data-id = "${element.id}" class="rounded-pill nav__a-btn">Reservar</a>
-                    </div>
-                </div>
-        `
-        console.log(element.photos[0]);
-    }) -->
-
             </article>
-    
         </section>
+
     </main>
 
     <footer>
@@ -97,6 +80,13 @@ Fecha: 16/05/2024
     </footer>
 
     <script type="module" src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script> Fancybox.bind('[data-fancybox]',
+            {
+                //
+            });    
+    </script>
+    <script type="module" src="../js/dashboard.js"></script>
 </body>
 
 </html>
