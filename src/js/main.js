@@ -14,7 +14,7 @@ import Backend from 'i18next-http-backend'
 
 // Import all of Bootstrap's JS
 import * as bootstrap from "bootstrap";
-import { indexDashboard, indexMySpace } from "./operations";
+import { indexDashboard} from "./operations";
 
 const URLUsers = `http://localhost:3000/users`;
 const URLSpaces = `http://localhost:3000/spaces`;
@@ -23,14 +23,12 @@ const cardsReservation = document.querySelector(".container__cards-reservations"
 // mySpace pages variables
 const btnSpace = document.querySelector("#mySpace")
 
-
-
 // footer variables
 const footer = document.querySelector("footer");
-btnSpace.addEventListener('click', function (event) {
-    event.preventDefault()
-    window.location.href = "./src/pages/mySpace.html"
-})
+// btnSpace.addEventListener('click', function (event) {
+//     event.preventDefault()
+//     window.location.href = "./src/pages/mySpace.html"
+// })
 
 
 footer.innerHTML = `

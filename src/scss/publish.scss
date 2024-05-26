@@ -1,0 +1,56 @@
+/*
+Clan: Clan Gates
+Grupo: Charlie
+Fecha: 16/05/2024
+*/
+
+// import normalize.css file ,bootstrap icons and google font 
+@import url(./normalize.scss);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+//color palette
+:root {
+    --white: #ffffff;
+    --opacWhite: #ffffffd0;
+    --orange: #ff7f00;
+    --blue: #000080;
+    --black: #000000;
+    --gray: #edefeb;
+    --blue_hover: #0000B3;
+    --gray_hover: #F2F2F3;
+    --yellow: #E9C46A;
+    --color-ig: #F00075;
+    --color-x: #1da1f2;
+    --color-fc: #1778f2;
+    --light-orange: #fbf7ee;
+}
+
+* {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+// section styles with form
+.section1-publish{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: var(--gray);
+}
+
+.publish-div1{
+    width: 100%;
+}
+
+.btn-form-publish{
+    background-color: var(--blue);
+}
+
+@media (width > 860px) {
+    .publish-div1{
+        width: 70%;
+    }    
+}
