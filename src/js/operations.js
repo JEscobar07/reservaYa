@@ -1,8 +1,7 @@
 //Function for dashboard 
-export async function indexDashboard(URLSpaces,cardsReservation) {
+export async function indexDashboard(URLSpaces, cardsReservation) {
     const response = await fetch(`${URLSpaces}`)
     const data = await response.json()
-
     cardsReservation.innerHTML = ""
     data.forEach(element => {
         cardsReservation.innerHTML += `
@@ -36,3 +35,37 @@ export async function indexDashboard(URLSpaces,cardsReservation) {
         `
     })
 }
+
+//Function for indexMySpace
+
+export async function indexMySpace(URLSpaces, articleMySpace) {
+    const response = await fetch(URLSpaces)
+    const data = await response.json()
+    articleMySpace.innerHTML = ``
+    for (let index = 0; index < data.length; index++) {
+        articleMySpace.innerHTML += `
+        <div class="card section1-art1-div2-div1 rounded-5">
+            <img src="../../public/img/cooworking.webp" class="card-img-top rounded-5" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center ">
+                <h5 class="card-title">${data[index].spaceType}</h5>
+                <p class="card-text pt-3"><strong>Dirección:</strong>${data[index].adress} ${data[index].adress} </p>
+                <p class="card-text"><strong> Aforo máximo:</strong> ${data[index].maximumCapacity}</p>
+                <a data-id=${data[index].id} href="#" class="btn btn-primary rounded-pill section1-a" data>Editar o <br>Eliminar</a>
+            </div>
+        </div>
+        `
+    }
+}
+
+export async function deleteMySpace(URLSpaces, id) {
+    await fetch(`${URLSpaces}/${id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        }
+    }
+    )
+}
+
+
+

@@ -1,74 +1,62 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "admin",
-            "email": "admin@admin.com",
-            "password": "Qwerty1234*"
-        },
-        {
-            "id": 2,
-            "name": "David Medina",
-            "email": "medinastevenurregodavid@gmail.com",
-            "password": "12345"
-        }
-    ],
-    "spaces": [
-        {
-            "id": 1,
-            "spaceType":"Salón de eventos",
-            "adress": "Calle 123",
-            "city": "Medellín",
-            "department": "Antioquia",
-            "maximumCapacity": 280,
-            "photos": [
-                "../../public/img/reservation1.webp"
-
-            ]
-        },
-        {
-            "id": 2,
-            "spaceType":"Salón de eventos",
-            "adress": "Carrera 45",
-            "city": "Bogotá",
-            "department": "Cundinamarca",
-            "maximumCapacity": 320,
-            "photos": [
-                "../../public/img/reservation2.webp"
-            ]
-        },
-        {
-            "id": 3,
-            "spaceType":"Salón de eventos",
-            "adress": "Carrera 45",
-            "city": "Bogotá",
-            "department": "Cundinamarca",
-            "maximumCapacity": 320,
-            "photos": [
-                "../../public/img/reservation3.webp"
-            ]
-        },
-        {
-            "id": 4,
-            "spaceType":"Salón de eventos",
-            "adress": "Carrera 45",
-            "city": "Bogotá",
-            "department": "Cundinamarca",
-            "maximumCapacity": 320,
-            "photos": [
-                "../../public/img/reservation4.webp"
-            ]
-        },
-        {
-            "id": 5,
-            "spaceType":"Salón de eventos",
-            "adress": "Carrera 45",
-            "city": "Bogotá",
-            "department": "Cundinamarca",
-            "maximumCapacity": 320,
-            "photos": [
-                "../../public/img/reservation5.webp"
-            ]
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@admin.com",
+      "password": "Qwerty1234*"
+    },
+    {
+      "id": "2",
+      "name": "David Medina",
+      "email": "medinastevenurregodavid@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "spaces": [
+    {
+      "id": "1",
+      "spaceType": "Salón de eventos",
+      "adress": "Calle 123",
+      "city": "Medellín",
+      "department": "Antioquia",
+      "maximumCapacity": 280,
+      "photos": [
+        "../../public/img/reservation1.webp"
+      ]
+    },
+    {
+      "id": "2",
+      "spaceType": "Salón de eventos",
+      "adress": "Carrera 45",
+      "city": "Bogotá",
+      "department": "Cundinamarca",
+      "maximumCapacity": 320,
+      "photos": [
+        "../../public/img/reservation2.webp"
+      ]
+    },
+    {
+      "id": "4",
+      "spaceType": "Salón de eventos",
+      "adress": "Carrera 45",
+      "city": "Bogotá",
+      "department": "Cundinamarca",
+      "maximumCapacity": 320,
+      "photos": [
+        "../../public/img/reservation4.webp"
+      ]
+    },
+    {
+      "id": "5",
+      "spaceType": "Salón de eventos",
+      "adress": "Carrera 45",
+      "city": "Bogotá",
+      "department": "Cundinamarca",
+      "maximumCapacity": 320,
+      "photos": [
+        "../../public/img/reservation5.webp"
+      ]
+    }
+  ]
 }
