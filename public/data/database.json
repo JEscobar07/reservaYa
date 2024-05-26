@@ -2,15 +2,49 @@
   "users": [
     {
       "id": "1",
-      "name": "admin",
       "email": "admin@admin.com",
       "password": "Qwerty1234*"
     },
     {
       "id": "2",
-      "name": "David Medina",
       "email": "medinastevenurregodavid@gmail.com",
       "password": "12345"
+    },
+    {
+      "id": "464e",
+      "email": "david@gmail.com",
+      "phone": "3254",
+      "password": "qwerty"
+    },
+    {
+      "id": "3307",
+      "email": "davidM@gmail.com",
+      "phone": "321456",
+      "password": "$;ENm9Jg7mGXJ\"$"
+    },
+    {
+      "id": "fc68",
+      "email": "davidst@gmail.com",
+      "phone": "35789",
+      "password": "$;ENm9Jg7mGXJ\"$"
+    },
+    {
+      "id": "9e1c",
+      "email": "jonathan@gmail.com",
+      "phone": "12357",
+      "password": "$;ENm9Jg7mGXJ\"$"
+    },
+    {
+      "id": "78ec",
+      "email": "lina@gmail.com",
+      "phone": "3214568520",
+      "password": "lina123"
+    },
+    {
+      "id": "1bbb",
+      "email": "eva@gmail.com",
+      "phone": "32145698741",
+      "password": "eva123"
     }
   ],
   "spaces": [

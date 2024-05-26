@@ -42,13 +42,15 @@ Fecha: 16/05/2024
                 <div class="form-login p-2 mx-3 fs-5 fw-bold col-12 col-lg item-wrapper">
                     <h3 class="display-5 text-center fw-bold">Login</h3>
                     <a href="../pages/register.html" class="register-login text-center text-decoration-none">Registrarse</a>
-                    <div class="w-100 gap-3 form__container-split">
-                        <input type="email" placeholder="Email" class="input-login" />
-                        <input type="password" placeholder="Contraseña" class="input-login" />
-                    </div>
-                    <button type="submit" class="btn-section0006  py-3 px-4 rounded-5 fs-5 fw-bold border-0"
-                        placeholder=""><a href="./dashboard.html">Ingresar</a>                        
-                    </button>
+                    <form class="text-center" id="login-form">
+                        <div class="w-100 gap-3 form__container-split">
+                            <input type="email" placeholder="Email" id="email" class="input-login" />
+                            <input type="password" placeholder="Contraseña" id="password" class="input-login" />
+                        </div>
+                        <button type="submit" class="btn-section0006 mt-4 py-3 px-4 rounded-5 fs-5 fw-bold border-0"
+                            placeholder="">Ingresar                     
+                        </button>
+                    </form>
                 </div>
             </article>
         </section>
@@ -57,6 +59,7 @@ Fecha: 16/05/2024
 
     </footer>
     <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/login.js"></script>
 </body>
 
 </html>
