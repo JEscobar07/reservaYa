@@ -13,7 +13,10 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "i18next": "^23.11.5",
+    "i18next-http-backend": "^2.5.2"
   }
 }

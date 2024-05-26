@@ -1,0 +1,92 @@
+<!--
+Clan: Clan Gates
+Grupo: Charlie - ReservaYa
+Fecha: 16/05/2024
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Project metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Plataforma de reserva en línea que facilita la gestión de espacios para diversas actividades. Desde eventos recreativos hasta eventos organizacionales, reservaYa permite a compañías y personas independientes subir sus espacios disponibles, que luego pueden ser alquilados por otras personas y empresas según sus necesidades." />
+    <meta name="keywords"
+        content="Jonathan, Escobar, David, Medina, Natalia, Chica, Alejo, Castrillon, JEscobar07, CODEALEJO, medi77na, natacrdz, reservas, espacios, personas, compañias, alquiler, eventos, lugares" />
+    <meta name="sitedomain" content="https://reservaYa.com/" />
+    <meta name="organization" content="RIWI_GATES" />
+    <meta name="author"
+        content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez" />
+    <meta name="designer"
+        content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez" />
+    <meta name="copyright" content="© 2024 Riwi. Todos los derechos reservados." />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
+    <link rel="shortcut icon" href="../../public/icons/favicon.ico" type="image/x-icon" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- Navigation bar -->
+        <nav class="container navbar navbar-expand-lg fixed-top mt-2 rounded-pill">
+            <div class="container-fluid px-4">
+                <a href="./index.html" class="nav__a">
+                    <img src="../../public/img/logoReservaYa.webp" class="img-fluid w-75 float-start logo__img"
+                        alt="logo of the site" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 gap-4 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link rounded active fs-5" href="#">Publicar</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav flex-grow-1 justify-content-end">
+                            <li class="nav-item">
+                                <a href="./src/pages/login.html" class="rounded-pill nav__a-btn">LogOut</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="container-xxl mt-5">
+            <article class="container-fluid container__cards-reservations d-flex flex-wrap">
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script> Fancybox.bind('[data-fancybox]',
+            {
+                //
+            });    
+    </script>
+    <script type="module" src="../js/dashboard.js"></script>
+</body>
+
+</html>
