@@ -48,4 +48,4 @@ footer.innerHTML = `
     <div class="footerr">
         <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
     </div>
-    `;
+`;

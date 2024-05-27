@@ -17,6 +17,30 @@
       "email": "jamundi@gmail.com",
       "phone": "123",
       "password": "123"
+    },
+    {
+      "id": "40f0",
+      "email": "jonathan@gmaiil.com",
+      "phone": "",
+      "password": "$;ENm9Jg7mGXJ\"$"
+    },
+    {
+      "id": "a472",
+      "email": "j123@gmail.com",
+      "phone": "123",
+      "password": "123"
+    },
+    {
+      "id": "49da",
+      "email": "eva@gmail.com",
+      "phone": "123",
+      "password": ""
+    },
+    {
+      "id": "cd8a",
+      "email": "iza@gmail.com",
+      "phone": "3214569874",
+      "password": "iza123"
     }
   ],
   "spaces": [
