@@ -57,8 +57,8 @@ export async function indexMySpace(URLSpaces, articleMySpace) {
                         <p class="card-text pt-3"><strong>Dirección: </strong>${data[index].adress} ${data[index].adress} </p>
                         <p class="card-text"><strong> Aforo máximo: </strong> ${data[index].maximumCapacity} personas.</p>
                         <div class="d-flex justify-content-around gap-4">
-                            <a data-id=${data[index].id} href="#" class="btn btn-danger rounded-pill section1-a" data>Eliminar</a>
-                            <a data-id=${data[index].id} href="#" class="btn btn-danger rounded-pill section1-a" data>Editar</a>
+                            <a data-id=${data[index].id} href="#" class="btn btn-danger rounded-pill section1-delete" data>Eliminar</a>
+                            <a data-id=${data[index].id} href="#" class="btn btn-warning rounded-pill section1-warning" data>Editar</a>
                         </div>
                     </div>
                 </div>
@@ -75,4 +75,10 @@ export async function deleteMySpace(URLSpaces, id) {
         }
     }
     )
+}
+
+export async function updateMySpace(URLSpaces, id, photo){
+    const api = await fetch(`${URLSpaces}/${id}`)
+    const data = await api.json()
+    consol.log(data)
 }
