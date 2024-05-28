@@ -7,7 +7,9 @@ Fecha: 16/05/2024
 // Import our custom CSS
 import "../scss/styles.scss";
 import "../scss/publish.scss"
-
+import "../js/alerts.js"
+import { alert } from "./alerts.js";
+import { alertNegative } from "./alerts.js";
 // import library for json-server
 import i18next from 'i18next';
 import Backend from 'i18next-http-backend'
@@ -74,8 +76,8 @@ sectionForm.innerHTML = `
     </form>
 `
 footer.innerHTML = `
-    <div class="footerr">
-        <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
+    <div class="section__footer">
+        <p class="text-wrap fs-4">© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
     </div>
 `
 

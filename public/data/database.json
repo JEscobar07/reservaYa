@@ -41,6 +41,12 @@
       "email": "iza@gmail.com",
       "phone": "3214569874",
       "password": "iza123"
+    },
+    {
+      "id": "2260",
+      "email": "aaaa@gmail.com",
+      "phone": "33232",
+      "password": "aaaaa"
     }
   ],
   "spaces": [
@@ -93,56 +99,6 @@
       "maximumCapacity": 320,
       "photos": "../../public/img/reservation5.webp",
       "idOwner": "2"
-    },
-    {
-      "id": "b5da",
-      "spaceType": "Salón de eventos",
-      "adress": "Calle 5 #32-08",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "280",
-      "photos": "https://www.amobladomedellin.co/uploads/2/7/7/3/27738513/1-36-orig.jpg",
-      "idOwner": "cd8a"
-    },
-    {
-      "id": "d336",
-      "spaceType": "Sala de la casa de joan",
-      "adress": "calle 32 #51a - 21",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "5",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "idOwner": "9eb4"
-    },
-    {
-      "id": "8bb0",
-      "spaceType": "Sala de la casa de joan",
-      "adress": "calle 32 #51a - 21",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "5",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "idOwner": "9eb4"
-    },
-    {
-      "id": "0dd6",
-      "spaceType": "Sala de la casa de joan",
-      "adress": "calle 32 #51a - 21",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "5",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "idOwner": "9eb4"
-    },
-    {
-      "id": "445e",
-      "spaceType": "Sala de la casa de joan",
-      "adress": "calle 32 #51a - 21",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "5",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "idOwner": "9eb4"
     }
   ]
 }

@@ -10,7 +10,7 @@ import Swal from 'sweetalert2'
 //alert for login positive
 const Toast = Swal.mixin({
     toast: true,
-    position: "top-end",
+    position: "top",
     showConfirmButton: false,
     timer: 2000,
     timerProgressBar: true, 
@@ -30,7 +30,7 @@ export function alert(msg){
 //alert for login negative
 const ToastNegative = Swal.mixin({
     toast: true,
-    position: "top-end",
+    position: "top",
     showConfirmButton: false,
     timer: 2000,
     timerProgressBar: true, 

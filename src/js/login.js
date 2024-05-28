@@ -7,7 +7,7 @@ Fecha: 16/05/2024
 // Import our custom CSS
 import "../scss/styles.scss";
 import { getUrlUsers } from "./urlData";
-import "../js/alerts.js"
+import "./alerts.js"
 import { alert } from "./alerts.js";
 import { alertNegative } from "./alerts.js";
 
@@ -60,17 +60,17 @@ header.innerHTML = `
 form2.innerHTML = `
 <section class="container">
     <div class="row justify-content-center">
-        <article class="col-md-6">
+        <article class="col-md-5">
             <img src="../../public/img/imglogin.webp" class="img-login img-fluid" alt="Imagen de inicio de sesión">
         </article>
-        <article class="col-md-6">
-            <div class="form-login">
+        <article class="col-md-6 ">
+            <div class="form-login ">
                 <h3 class="display-5 text-center fw-bold">Login</h3>
                 <a href="../pages/register.html" class="register-login text-center text-decoration-none">Registrarse</a>
                 <form class="text-center" id="login-form">
                     <div class="mb-3">
-                        <input type="email" placeholder="Email" id="email" class="input-login mb-3 py-3 rounded-pill border-0" />
-                        <input type="password" placeholder="Contraseña" id="password" class="input-login py-3 rounded-pill border-0" />
+                        <input type="email" placeholder="Email" id="email" class="input-login mb-3 py-1 rounded-pill border-0" />
+                        <input type="password" placeholder="Contraseña" id="password" class="input-login rounded-pill border-0" />
                     </div>
                     <button type="submit" id="alert-login" class="btn-section0006 mt-4 py-3 px-4 rounded-5 fs-5 fw-bold border-0">Ingresar</button>
                 </form>
@@ -81,10 +81,11 @@ form2.innerHTML = `
 `
 
 footer.innerHTML = `
-    <div class="footerr">
-        <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
+    <div class="section__footer">
+        <p class="text-wrap fs-4">© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
     </div>
-    `
+    `;
+
 
 const URL = getUrlUsers();
 const form = document.querySelector("#login-form"); //data manipulation
@@ -114,7 +115,7 @@ form.addEventListener('submit', async (event) => {
             }, 2000);
 
         } else {
-            alert("Wrong password")
+            alertNegative("Error credential")
         }
     }
 })

@@ -7,7 +7,6 @@ Fecha: 16/05/2024
 // Import our custom CSS
 import "../scss/styles.scss";
 import { getUrlUsers } from "./urlData";
-
 // import library for json-server
 import i18next from 'i18next';
 import Backend from 'i18next-http-backend'
@@ -63,7 +62,7 @@ form2.innerHTML = `
         <input type="email" class="form-control rounded-pill section-register-input p-4 fs-3" required id="email-register" placeholder="Email">
     </div>
     <div class="mb-3 section-register-div ">
-        <input type="text" class="form-control rounded-pill p-4 fs-3 section-register-input" required id="phone-register" placeholder="Phone">
+        <input type="number" class="form-control rounded-pill p-4 fs-3 section-register-input" required id="phone-register" placeholder="Phone">
     </div>
 
     <div class="mb-3 section-register-div section-register-input3">
@@ -78,8 +77,8 @@ form2.innerHTML = `
 `
 
 footer.innerHTML = `
-    <div class="footerr">
-        <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
+    <div class="section__footer">
+        <p class="text-wrap fs-4">© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
     </div>
 `
 

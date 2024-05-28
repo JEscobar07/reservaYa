@@ -8,6 +8,9 @@ Fecha: 16/05/2024
 import "../scss/styles.scss";
 import {indexMySpace, deleteMySpace,header} from "./mySpaceOperations.js"
 import {getUrlSpaces} from "./urlData.js"
+import "../js/alerts.js"
+import { alert } from "./alerts.js";
+import { alertNegative } from "./alerts.js";
 
 // import library for json-server
 import i18next from 'i18next';
@@ -44,8 +47,12 @@ navBar.addEventListener('click', (event) => {
     }
 })
 
+
+
+
+
 footer.innerHTML = `
-    <div class="footerr">
-        <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
+    <div class="section__footer">
+        <p class="text-wrap fs-4">© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
     </div>
 `;

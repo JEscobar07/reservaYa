@@ -58,7 +58,7 @@ export async function indexMySpace(URLSpaces, articleMySpace) {
                         <p class="card-text"><strong> Aforo máximo: </strong> ${data[index].maximumCapacity} personas.</p>
                         <div class="d-flex justify-content-around gap-4">
                             <a data-id=${data[index].id} href="#" class="btn btn-danger rounded-pill section1-a" data>Eliminar</a>
-                            <a data-id=${data[index].id} href="#" class="btn btn-danger rounded-pill section1-a" data>Editar</a>
+                            <a data-id=${data[index].id} href="#" id"deletee" class="btn btn-danger rounded-pill section1-a" data>Editar</a>
                         </div>
                     </div>
                 </div>
