@@ -56,10 +56,13 @@ export async function indexMySpace(URLSpaces, articleMySpace) {
                         <h5 class="card-title">${data[index].spaceType}</h5>
                         <p class="card-text pt-3"><strong>Dirección: </strong>${data[index].adress} ${data[index].adress} </p>
                         <p class="card-text"><strong> Aforo máximo: </strong> ${data[index].maximumCapacity} personas.</p>
-                        <a data-id=${data[index].id} href="#" class="btn btn-primary rounded-pill section1-a" data>Editar o <br>Eliminar</a>
+                        <div class="d-flex justify-content-around gap-4">
+                            <a data-id=${data[index].id} href="#" class="btn btn-danger rounded-pill section1-a" data>Eliminar</a>
+                            <a data-id=${data[index].id} href="#" class="btn btn-danger rounded-pill section1-a" data>Editar</a>
+                        </div>
                     </div>
                 </div>
-            `
+            `;
         }
     }
 }
