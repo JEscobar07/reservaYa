@@ -98,7 +98,6 @@ form.addEventListener("submit", async (e) => {
     }else{
         alert("el email ya existe")
     }
-
 });    
 
 

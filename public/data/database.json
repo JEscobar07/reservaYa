@@ -34,7 +34,7 @@
       "id": "49da",
       "email": "eva@gmail.com",
       "phone": "123",
-      "password": ""
+      "password": "eva123"
     },
     {
       "id": "cd8a",
@@ -46,25 +46,63 @@
   "spaces": [
     {
       "id": "1",
-      "spaceType": "Salón de eventos",
-      "adress": "Carrera 45",
+      "spaceType": "Reuniones familiares",
+      "adress": "Carrera 45 #32-19",
       "city": "Bogotá",
       "department": "Cundinamarca",
       "maximumCapacity": 320,
-      "photos": [
-        "../../public/img/reservation5.webp"
-      ]
+      "photos": "../../public/img/reservation1.webp",
+      "idOwner": "2"
     },
     {
       "id": "2",
       "spaceType": "Salón de eventos",
+      "adress": "Carrera 120 #32-16",
+      "city": "Bucaramanga",
+      "department": "Santander",
+      "maximumCapacity": 320,
+      "photos": "../../public/img/reservation2.webp",
+      "idOwner": "2"
+    },
+    {
+      "id": "3",
+      "spaceType": "Salón de eventos",
+      "adress": "Avenida 55 #12-84",
+      "city": "Manizales",
+      "department": "Caldas",
+      "maximumCapacity": 320,
+      "photos": "../../public/img/reservation3.webp",
+      "idOwner": "49da"
+    },
+    {
+      "id": "4",
+      "spaceType": "Salón de Bodas",
+      "adress": "Calle 3 #82-19",
+      "city": "Bogotá",
+      "department": "Cundinamarca",
+      "maximumCapacity": 320,
+      "photos": "../../public/img/reservation4.webp",
+      "idOwner": "49da"
+    },
+    {
+      "id": "5",
+      "spaceType": "Salón de eventos",
       "adress": "Carrera 45",
       "city": "Bogotá",
       "department": "Cundinamarca",
       "maximumCapacity": 320,
-      "photos": [
-        "../../public/img/reservation5.webp"
-      ]
+      "photos": "../../public/img/reservation5.webp",
+      "idOwner": "2"
+    },
+    {
+      "id": "b5da",
+      "spaceType": "Salón de eventos",
+      "adress": "Calle 5 #32-08",
+      "city": "Bello",
+      "department": "Antioquia",
+      "maximumCapacity": "280",
+      "photos": "https://www.amobladomedellin.co/uploads/2/7/7/3/27738513/1-36-orig.jpg",
+      "idOwner": "cd8a"
     }
   ]
 }

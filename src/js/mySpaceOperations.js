@@ -1,10 +1,14 @@
 //Function for indexMySpace
 
-export function header(tagHeader){
+const userOnline = localStorage.getItem("userOnline")
+const userObject = JSON.parse(userOnline);
+const userOnlineId = userObject.id;
+
+export function header(tagHeader) {
     tagHeader.innerHTML = `
         <nav class="container navbar navbar-expand-lg fixed-top mt-2 rounded-pill">
             <div class="container-fluid px-4">
-                <a href="./index.html" class="nav__a">
+                <a href="/" class="nav__a">
                     <img src="../../public/img/logoReservaYa.webp" class="img-fluid w-75 float-start logo__img"
                         alt="logo of the site" />
                 </a>
@@ -28,7 +32,7 @@ export function header(tagHeader){
                             <li class="nav-item d-flex gap-4  ">
                                 <button type="button" class="rounded-pill nav__a-btn text-center btn-spacePublic">Publicar un
                                     espacio</button>
-                                <a href="./src/pages/login.html" class="rounded-pill nav__a-btn">Logout</a>
+                                <a href="/" class="rounded-pill nav__a-btn">Logout</a>
                             </li>
                         </ul>
                     </div>
@@ -43,17 +47,20 @@ export async function indexMySpace(URLSpaces, articleMySpace) {
     const data = await response.json()
     articleMySpace.innerHTML = ``
     for (let index = 0; index < data.length; index++) {
-        articleMySpace.innerHTML += `
-        <div class="card section1-art1-div2-div1 rounded-5">
-            <img src="${data[index].photos[0]}" class="card-img-top rounded-5" alt="...">
-            <div class="card-body d-flex flex-column justify-content-center align-items-center ">
-                <h5 class="card-title">${data[index].spaceType}</h5>
-                <p class="card-text pt-3"><strong>Dirección:</strong>${data[index].adress} ${data[index].adress} </p>
-                <p class="card-text"><strong> Aforo máximo:</strong> ${data[index].maximumCapacity}</p>
-                <a data-id=${data[index].id} href="#" class="btn btn-primary rounded-pill section1-a" data>Editar o <br>Eliminar</a>
-            </div>
-        </div>
-        `
+        if (data[index].idOwner == userOnlineId) {
+
+            articleMySpace.innerHTML += `
+                <div class="card section1-art1-div2-div1 rounded-5">
+                    <img src="${data[index].photos}" class="card-img-top rounded-5" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center ">
+                        <h5 class="card-title">${data[index].spaceType}</h5>
+                        <p class="card-text pt-3"><strong>Dirección: </strong>${data[index].adress} ${data[index].adress} </p>
+                        <p class="card-text"><strong> Aforo máximo: </strong> ${data[index].maximumCapacity} personas.</p>
+                        <a data-id=${data[index].id} href="#" class="btn btn-primary rounded-pill section1-a" data>Editar o <br>Eliminar</a>
+                    </div>
+                </div>
+            `
+        }
     }
 }
 

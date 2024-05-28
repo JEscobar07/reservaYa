@@ -31,8 +31,8 @@ async function index() {
         cardsReservation.innerHTML += `
                 <div class="card text-center my-5 rounded cards__reservation">
                     <div class="reservation__carousel-img mb-3" id="${i}">
-                        <a data-fancybox data-src="${element.photos[0]}">
-                            <img src="${element.photos[0]}" class="d-block w-100 rounded" alt="...">
+                        <a data-fancybox data-src="${element.photos}">
+                            <img src="${element.photos}" class="d-block w-100 rounded" alt="...">
                         </a>
                     </div>
                     <div class="card-body">
