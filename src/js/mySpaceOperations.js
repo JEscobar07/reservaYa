@@ -42,7 +42,7 @@ export function header(tagHeader) {
     `
 }
 
-export async function indexMySpace(URLSpaces, articleMySpace) {
+export async function index(URLSpaces, articleMySpace) {
     const response = await fetch(URLSpaces)
     const data = await response.json()
     articleMySpace.innerHTML = ``
@@ -67,6 +67,14 @@ export async function indexMySpace(URLSpaces, articleMySpace) {
     }
 }
 
+export async function footer(footer){
+    footer.innerHTML = `
+    <div class="footerr">
+        <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
+    </div>
+`;
+}
+
 export async function deleteMySpace(URLSpaces, id) {
     await fetch(`${URLSpaces}/${id}`, {
         method: "DELETE",
@@ -77,8 +85,8 @@ export async function deleteMySpace(URLSpaces, id) {
     )
 }
 
-export async function updateMySpace(URLSpaces, id, photo){
+export async function searchMySpace(URLSpaces, id){
     const api = await fetch(`${URLSpaces}/${id}`)
     const data = await api.json()
-    consol.log(data)
+    return (data)
 }

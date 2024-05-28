@@ -5,8 +5,10 @@ Fecha: 16/05/2024
 */
 
 // Import our custom CSS
+
 import "../scss/styles.scss";
 import "../scss/publish.scss"
+import { getUrlSpaces } from "./urlData";
 
 // import library for json-server
 import i18next from 'i18next';
@@ -15,7 +17,6 @@ import Backend from 'i18next-http-backend'
 // Import all of Bootstrap's JS
 import * as bootstrap from "bootstrap";
 
-import { getUrlSpaces } from "./urlData";
 
 const userOnline = localStorage.getItem("userOnline")
 const userObject = JSON.parse(userOnline);
@@ -81,7 +82,7 @@ footer.innerHTML = `
 
 //Listening to events
 btnMySpace = document.querySelector(".btn-mySpace")
-btnMySpace.addEventListener('click',() =>{
+btnMySpace.addEventListener('click', () => {
     window.location.href = "./mySpace.html"
 })
 
@@ -94,16 +95,30 @@ const department = document.querySelector('#department')
 const spaceType = document.querySelector('#spaceType')
 const URL = getUrlSpaces()
 
+// Verifica si la variable 'card' está almacenada en localStorage
+if (localStorage.getItem("card")) {
+    const cardString = localStorage.getItem("card");
+    const card = JSON.parse(cardString);
+
+    // Muestra los valores del objeto card en los campos correspondientes del formulario
+    photo.value = card.photos
+    peopleMax.value = card.maximumCapacity
+    adress.value = card.adress
+    city.value = card.city
+    department.value = card.department
+    spaceType.value = card.spaceType
+
+    //call of function update
+    await update(card)
+}
+
 form.addEventListener('submit', async (e) => {
-
     e.preventDefault();
-    await create(spaceType,photo, peopleMax,adress,city,department,userOnlineId)
-    // window.location.href = "./mySpace.html"
-
+    await create(spaceType, photo, peopleMax, adress, city, department, userOnlineId)
+    window.location.href = "./mySpace.html"
 });
 
-async function 
-create(spaceType,photo, peopleMax,adress,city,department,userOnlineId) {
+async function create(spaceType, photo, peopleMax, adress, city, department, userOnlineId) {
     //ACA DEBEMOS PROGRAMAR LA PETICION PARA CREAR UNA CATEGORIA
 
     const newSpace = {
@@ -124,3 +139,31 @@ create(spaceType,photo, peopleMax,adress,city,department,userOnlineId) {
         }
     })
 }
+
+async function update(card) {
+    // Agrega un evento 'click' al botón de enviar
+    document.querySelector('#form').addEventListener('submit', async (event) => {
+        // Construye los datos para la solicitud PUT
+        const updateCategory = {
+            spaceType: spaceType.value,
+            adress: adress.value,
+            city: city.value,
+            department: department.value,
+            maximumCapacity: peopleMax.value,
+            photos: photo.value
+        }
+
+        // Realiza la solicitud PUT
+        await fetch(`${URL}/${card.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-type": "application/json"
+            },
+            body: JSON.stringify(updateCategory)
+        });
+
+        window.location.href = "./mySpace.html";
+    });
+}
+
+
