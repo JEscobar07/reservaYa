@@ -16,7 +16,14 @@ const cardsReservation = document.querySelector(".container__cards-reservations"
 const URLSpaces = getUrlSpaces();
 
 const btnLogout = document.querySelector("#btn-logout")
-btnLogout.addEventListener("click", () => {
+btnLogout.addEventListener("click", (event) => {
+    swal({
+        title: 'Error!',
+        text: 'Do you want to continue',
+        type: 'error',
+        confirmButtonText: 'Cool'
+    })
+    event.preventDefault()
     localStorage.removeItem("userOnline")
     window.location.href = "/"
 }) 

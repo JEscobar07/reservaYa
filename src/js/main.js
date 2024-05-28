@@ -7,6 +7,8 @@ Fecha: 16/05/2024
 // Import our custom CSS
 import "../scss/styles.scss";
 import "../scss/dashboard.scss";
+import "../js/alerts.js"
+import { alert } from "./alerts.js";
 
 // import library for json-server
 import i18next from 'i18next';
@@ -36,3 +38,17 @@ footer.innerHTML = `
         <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
     </div>
     `;
+
+
+const hola = document.getElementById("alert-login")
+
+hello.addEventListener("click", (event)=>{
+    event.preventDefault()
+    alert("hola")
+    setTimeout(() => {
+        
+        window.location.href = event.target.href
+    }, 3000);
+
+
+})
