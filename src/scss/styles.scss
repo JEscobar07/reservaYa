@@ -346,6 +346,7 @@ Fecha: 16/05/2024
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .form__container-split-item {
@@ -361,6 +362,13 @@ Fecha: 16/05/2024
     &:hover {
         border: 1px var(--blue) solid;
         cursor: pointer;
+    }
+
+    @media (max-width: 1050px) {
+        width: 100%;
+        &:nth-child(1){
+            margin-bottom: 1rem;
+        }
     }
 
 }

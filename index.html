@@ -6,28 +6,47 @@ Fecha: 16/05/2024
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <!-- Project metadata -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Plataforma de reserva en línea que facilita la gestión de espacios para diversas actividades. Desde eventos recreativos hasta eventos organizacionales, reservaYa permite a compañías y personas independientes subir sus espacios disponibles, que luego pueden ser alquilados por otras personas y empresas según sus necesidades." />
-  <meta name="keywords"
-    content="Jonathan, Escobar, David, Medina, Natalia, Chica, Alejo, Castrillon, JEscobar07, CODEALEJO, medi77na, natacrdz, reservas, espacios, personas, compañias, alquiler, eventos, lugares" />
-  <meta name="sitedomain" content="https://reservaYa.com/" />
-  <meta name="organization" content="RIWI_GATES" />
-  <meta name="author"
-    content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez" />
-  <meta name="designer"
-    content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez" />
-  <meta name="copyright" content="© 2024 Riwi. Todos los derechos reservados." />
-  <meta name="robots" content="index,follow" />
-  <meta name="googlebot" content="index,follow" />
-  <meta name="revisit-after" content="15days" />
-  <link rel="shortcut icon" href="./public/icons/favicon.ico" type="image/x-icon" />
-  <title>ReservaYa</title>
-</head>
+  <head>
+    <!-- Project metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Plataforma de reserva en línea que facilita la gestión de espacios para diversas actividades. Desde eventos recreativos hasta eventos organizacionales, reservaYa permite a compañías y personas independientes subir sus espacios disponibles, que luego pueden ser alquilados por otras personas y empresas según sus necesidades."
+    />
+    <meta
+      name="keywords"
+      content="Jonathan, Escobar, David, Medina, Natalia, Chica, Alejo, Castrillon, JEscobar07, CODEALEJO, medi77na, natacrdz, reservas, espacios, personas, compañias, alquiler, eventos, lugares"
+    />
+    <meta name="sitedomain" content="https://reservaYa.com/" />
+    <meta name="organization" content="RIWI_GATES" />
+    <meta
+      name="author"
+      content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez"
+    />
+    <meta
+      name="designer"
+      content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez"
+    />
+    <meta
+      name="copyright"
+      content="© 2024 Riwi. Todos los derechos reservados."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
+    <link
+      rel="shortcut icon"
+      href="./public/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>ReservaYa</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
 
 <body>
   <!-- Page header section -->
@@ -313,24 +332,49 @@ Fecha: 16/05/2024
       </div>
     </section>
 
-    <!-- Section 7 (form) of the main body -->
-    <section id="form" class="form-section">
-      <h2 class="display-5 text-center form-section__title fw-bold">
-        ¿Presentas alguna novedad en la plataforma? ¡Comunícate con nosotros!
-      </h2>
-      <article class="form__container fs-5 fw-bold">
-        <div class="w-100 form__container-split">
-          <input type="text" placeholder="Nombre" class="form__container-split-item" />
-          <input type="number" placeholder="Teléfono" class="form__container-split-item" />
-        </div>
-        <input type="email" placeholder="Email" class="form__container-item" />
-        <input type="text" placeholder="Mensaje" class="form__container-item" />
-        <button type="submit" class="py-3 px-4 rounded-5 fs-4 fw-bold form-section__container-text__buttom border-0"
-          placeholder="">
-          Enviar Mensaje
-        </button>
-      </article>
-    </section>
+      <!-- form section -->
+      <section id="form" class="form-section">
+        <h2 class="display-5 text-center form-section__title fw-bold">
+          ¿Presentas alguna novedad en la plataforma? ¡Comunícate con nosotros!
+        </h2>
+        <article class="form__container fs-5 fw-bold">
+          <div class="w-100 form__container-split">
+            <input
+              type="text"
+              id="nameInput"
+
+              placeholder="Nombre"
+              class="form__container-split-item"
+            />
+            <input
+              type="number"
+              id="phoneInput"
+              placeholder="Teléfono"
+              class="form__container-split-item"
+            />
+          </div>
+          <input
+            type="email"
+            id="emailInput"
+            placeholder="Email"
+            class="form__container-item"
+          />
+          <input
+            type="text"
+            id="messageInput"
+            placeholder="Mensaje"
+            class="form__container-item"
+          />
+          <button
+            type="submit"
+            id="sendButton"
+            class="py-3 px-4 rounded-5 fs-4 fw-bold form-section__container-text__buttom"
+            placeholder=""
+          >
+            Enviar Mensaje
+          </button>
+        </article>
+      </section>
 
     <!-- Section 8 (social media) of the main body -->
     <section class="py-5">
@@ -352,8 +396,8 @@ Fecha: 16/05/2024
   <!-- Project footer section -->
   <footer></footer>
 
-  <!-- Main JavaScript module for the project -->
-  <script type="module" src="./src/js/main.js"></script>
-</body>
-
+    <!-- Main JavaScript module for the project -->
+    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/email.js"></script>
+  </body>
 </html>
