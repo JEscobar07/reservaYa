@@ -14,12 +14,17 @@ import Backend from 'i18next-http-backend'
 
 // Import all of Bootstrap's JS
 import * as bootstrap from "bootstrap";
+import { getUrlReservations } from "./urlData";
 
 // variables to extract information
 const header = document.querySelector("header")
 const sectionForm = document.querySelector("section")
 const footer = document.querySelector("footer");
 let btnMySpace = ""
+const URL = getUrlReservations()
+const userOnline = localStorage.getItem("userOnline")
+const userObject = JSON.parse(userOnline);
+const userOnlineId = userObject.id;
 
 // inserting data into body
 header.innerHTML = `
@@ -54,11 +59,14 @@ header.innerHTML = `
 sectionForm.innerHTML = `
             <form id="form" class="d-flex flex-column align-items-center">
                 <h2 class="display-5 text-center form-section__title fw-bold pb-3">
-                    Nombre del espacio
+                    Solicitar espacio
                 </h2>
                 <div class="d-flex flex-column align-items-center gap-4 publish-div1 px-2 container">
-                    <input type="date" placeholder="FechaReservar" class="form-control rounded-pill p-4 fs-3 " />
-                    <input type="number" placeholder="Cant. personas disponibles"
+                    <label for="dateStartReservation">Fecha de inicio de reserva:</label>
+                    <input type="date" id="dateStartReservation" class="form-control rounded-pill p-4 fs-3 " />
+                    <label for="dateEndReservation">Fecha de culminación de reserva:</label>
+                    <input type="date" id="dateEndReservation" class="form-control rounded-pill p-4 fs-3 " />
+                    <input type="number" id="maxPeople" placeholder="Aforo máximo solicitado:"
                         class="form-control rounded-pill p-4 fs-3" />
                     <div class="w-100">
                         <select id="disabledSelect" class="form-select form-control rounded-pill p-4 fs-3">
@@ -87,3 +95,39 @@ btnMySpace = document.querySelector(".btn-mySpace")
 btnMySpace.addEventListener('click',(event) =>{
     window.location.href = "./dashboard.html"
 })
+
+const form = document.querySelector("#form")
+const dateStart = document.querySelector("#dateStartReservation")
+const dateEnd = document.querySelector("#dateEndReservation") 
+const maxPeople = document.querySelector("#maxPeople")
+const eventType = document.querySelector("#disabledSelect")
+
+form.addEventListener('submit', async (e) => {
+
+    e.preventDefault();
+    await publicReservation(dateStart, dateEnd, eventType, maxPeople)
+    window.location.href = "./dashboard.html"
+
+})
+
+async function publicReservation(dateStart, dateEnd, eventType, maxPeople) {
+
+    const data = {
+        idRequestingUser: userOnlineId,
+        idSpace: "1",
+        dateStart: dateStart.value,
+        dateEnd: dateEnd.value,
+        maxPeople: maxPeople.value,
+        eventType: eventType.value
+    }
+    await fetch(URL, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8'
+        }
+    })
+}
+
+
+

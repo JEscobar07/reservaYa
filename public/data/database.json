@@ -2,14 +2,14 @@
   "users": [
     {
       "id": "1",
-      "name": "admin",
       "email": "admin@admin.com",
+      "phone": "123",
       "password": "Qwerty1234*"
     },
     {
       "id": "2",
-      "name": "David Medina",
       "email": "medinastevenurregodavid@gmail.com",
+      "phone": "123",
       "password": "12345"
     },
     {
@@ -103,6 +103,53 @@
       "maximumCapacity": "280",
       "photos": "https://www.amobladomedellin.co/uploads/2/7/7/3/27738513/1-36-orig.jpg",
       "idOwner": "cd8a"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "1",
+      "idRequestingUser": "cd8a",
+      "idSpace": "1",
+      "dateStart": "2021-10-10",
+      "dateEnd": "2021-10-12",
+      "maxPeople": 20,
+      "eventType": "Reunión familiar"
+    },
+    {
+      "id": "6449",
+      "idRequestingUser": "2",
+      "idSpace": "1",
+      "dateStart": "2024-06-14",
+      "dateEnd": "2024-06-17",
+      "maxPeople": "200",
+      "eventType": "Otros"
+    },
+    {
+      "id": "36c2",
+      "idRequestingUser": "2",
+      "idSpace": "1",
+      "dateStart": "2024-05-29",
+      "dateEnd": "2024-05-31",
+      "maxPeople": "100",
+      "eventType": "Cumpleaños"
+    },
+    {
+      "id": "092f",
+      "idRequestingUser": "49da",
+      "idSpace": "1",
+      "dateStart": "2024-05-29",
+      "dateEnd": "2024-05-31",
+      "maxPeople": "123",
+      "eventType": "Despedida"
+    },
+    {
+      "id": "c85e",
+      "idRequestingUser": "49da",
+      "idSpace": "1",
+      "dateStart": "2024-05-29",
+      "dateEnd": "2024-06-03",
+      "maxPeople": "321",
+      "eventType": "Despedida"
     }
   ]
 }
