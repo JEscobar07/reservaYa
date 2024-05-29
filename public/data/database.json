@@ -2,14 +2,14 @@
   "users": [
     {
       "id": "1",
-      "name": "admin",
       "email": "admin@admin.com",
+      "phone": "123",
       "password": "Qwerty1234*"
     },
     {
       "id": "2",
-      "name": "David Medina",
       "email": "medinastevenurregodavid@gmail.com",
+      "phone": "322655",
       "password": "12345"
     },
     {
@@ -33,7 +33,7 @@
     {
       "id": "49da",
       "email": "eva@gmail.com",
-      "phone": "123",
+      "phone": "315248",
       "password": "eva123"
     },
     {
@@ -85,14 +85,13 @@
       "idOwner": "49da"
     },
     {
-      "id": "5",
-      "spaceType": "Salón de eventos",
+      "spaceType": "Salón de eventos religiosos",
       "adress": "Carrera 45",
       "city": "Bogotá",
       "department": "Cundinamarca",
-      "maximumCapacity": 320,
+      "maximumCapacity": "320",
       "photos": "../../public/img/reservation5.webp",
-      "idOwner": "2"
+      "id": "5"
     },
     {
       "id": "b5da",
@@ -123,14 +122,55 @@
       "id": "cd25"
     },
     {
-      "id": "04f8",
-      "spaceType": "Evento religioso",
-      "adress": "Diagonal 32 # 29c -2",
-      "city": "itagui",
+      "id": "d3d4",
+      "spaceType": "Salón de eventos religiosos",
+      "adress": "Carrera 45",
+      "city": "Bogotá",
+      "department": "Cundinamarca",
+      "maximumCapacity": "320",
+      "photos": "../../public/img/reservation5.webp",
+      "idOwner": "2"
+    },
+    {
+      "spaceType": "Retiro espiritual",
+      "adress": "Diagonal 32 #51 - 23",
+      "city": "bello",
       "department": "antioquia",
-      "maximumCapacity": "12",
-      "photos": "https://www.ciencuadras.com/blog/wp-content/uploads/2022/08/Barrio-Manrique-Medellin.jpg",
-      "idOwner": "9eb4"
+      "maximumCapacity": "100",
+      "photos": "https://www.arabianbusiness.com/cloud/2023/10/09/Ohana-by-The-Sea-development.jpg",
+      "id": "12c2"
+    },
+    {
+      "id": "6ce7",
+      "spaceType": "Retiro espiritual",
+      "adress": "Diagonal 32 #51 - 23",
+      "city": "bello",
+      "department": "antioquia",
+      "maximumCapacity": "100",
+      "photos": "https://www.arabianbusiness.com/cloud/2023/10/09/Ohana-by-The-Sea-development.jpg",
+      "idOwner": "2"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "4a07",
+      "idRequestingUser": "49da",
+      "idSpace": "3",
+      "dateStart": "2024-06-08",
+      "dateEnd": "2024-06-10",
+      "maxPeople": "200",
+      "eventType": "Aniversario",
+      "actualDate": "2024 - 5 - 28"
+    },
+    {
+      "id": "d292",
+      "idRequestingUser": "49da",
+      "idSpace": "1",
+      "dateStart": "2024-05-21",
+      "dateEnd": "2024-05-30",
+      "maxPeople": "22",
+      "eventType": "Despedida",
+      "actualDate": "2024 - 5 - 28"
     }
   ]
 }
