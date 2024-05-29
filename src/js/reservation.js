@@ -92,33 +92,41 @@ footer.innerHTML = `
 
 //Listening to events
 btnMySpace = document.querySelector(".btn-mySpace")
-btnMySpace.addEventListener('click',(event) =>{
-    window.location.href = "./dashboard.html"
+btnMySpace.addEventListener('click', (event) => {
+    window.location.href = "/dashboard.html"
 })
 
 const form = document.querySelector("#form")
 const dateStart = document.querySelector("#dateStartReservation")
-const dateEnd = document.querySelector("#dateEndReservation") 
+const dateEnd = document.querySelector("#dateEndReservation")
 const maxPeople = document.querySelector("#maxPeople")
 const eventType = document.querySelector("#disabledSelect")
 
+// Recuperar y pintar datos en la segunda página
+const spaceId = localStorage.getItem('spaceId');
+
 form.addEventListener('submit', async (e) => {
-
     e.preventDefault();
-    await publicReservation(dateStart, dateEnd, eventType, maxPeople)
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    const actualDate = (`${year} - ${month} - ${day}`);
+    alert(actualDate)
+    await publicReservation(dateStart, dateEnd, eventType, maxPeople, spaceId, actualDate)
     window.location.href = "./dashboard.html"
-
 })
 
-async function publicReservation(dateStart, dateEnd, eventType, maxPeople) {
+async function publicReservation(dateStart, dateEnd, eventType, maxPeople, spaceId, actualDate) {
 
     const data = {
         idRequestingUser: userOnlineId,
-        idSpace: "1",
+        idSpace: spaceId,
         dateStart: dateStart.value,
         dateEnd: dateEnd.value,
         maxPeople: maxPeople.value,
-        eventType: eventType.value
+        eventType: eventType.value,
+        actualDate: actualDate
     }
     await fetch(URL, {
         method: 'POST',

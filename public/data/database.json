@@ -9,7 +9,7 @@
     {
       "id": "2",
       "email": "medinastevenurregodavid@gmail.com",
-      "phone": "123",
+      "phone": "322655",
       "password": "12345"
     },
     {
@@ -33,7 +33,7 @@
     {
       "id": "49da",
       "email": "eva@gmail.com",
-      "phone": "123",
+      "phone": "315248",
       "password": "eva123"
     },
     {
@@ -107,49 +107,14 @@
   ],
   "reservations": [
     {
-      "id": "1",
-      "idRequestingUser": "cd8a",
-      "idSpace": "1",
-      "dateStart": "2021-10-10",
-      "dateEnd": "2021-10-12",
-      "maxPeople": 20,
-      "eventType": "Reunión familiar"
-    },
-    {
-      "id": "6449",
-      "idRequestingUser": "2",
-      "idSpace": "1",
-      "dateStart": "2024-06-14",
-      "dateEnd": "2024-06-17",
+      "id": "4a07",
+      "idRequestingUser": "49da",
+      "idSpace": "3",
+      "dateStart": "2024-06-08",
+      "dateEnd": "2024-06-10",
       "maxPeople": "200",
-      "eventType": "Otros"
-    },
-    {
-      "id": "36c2",
-      "idRequestingUser": "2",
-      "idSpace": "1",
-      "dateStart": "2024-05-29",
-      "dateEnd": "2024-05-31",
-      "maxPeople": "100",
-      "eventType": "Cumpleaños"
-    },
-    {
-      "id": "092f",
-      "idRequestingUser": "49da",
-      "idSpace": "1",
-      "dateStart": "2024-05-29",
-      "dateEnd": "2024-05-31",
-      "maxPeople": "123",
-      "eventType": "Despedida"
-    },
-    {
-      "id": "c85e",
-      "idRequestingUser": "49da",
-      "idSpace": "1",
-      "dateStart": "2024-05-29",
-      "dateEnd": "2024-06-03",
-      "maxPeople": "321",
-      "eventType": "Despedida"
+      "eventType": "Aniversario",
+      "actualDate": "2024 - 5 - 28"
     }
   ]
 }

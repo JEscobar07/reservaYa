@@ -39,11 +39,18 @@ async function index() {
                         <h5 class="card-title fs-2 mb-2">${element.spaceType}</h5>
                         <p class="card-text"><span class="fw-semibold">Dirección: </span>${element.adress}, ${element.city}, ${element.department}.</p>
                         <p class="card-text"><span class="fw-semibold">Aforo máximo: </span>${element.maximumCapacity} personas.</p>
-                        <a href="./reservation.html" data-id = "${element.id}" class="rounded-pill nav__a-btn">Reservar</a>
+                        <a data-id="${element.id}" class="rounded-pill nav__a-btn btn-reservation">Reservar</a>
                     </div>
                 </div>
         `
     })
 }
-
 await index();
+
+cardsReservation.addEventListener('click', (e) => {
+    if (e.target.classList.contains("btn-reservation")) {
+        const id = e.target.getAttribute('data-id')
+        localStorage.setItem('spaceId', id);
+        window.location.href = `./reservation.html`
+    }
+})

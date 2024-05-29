@@ -77,30 +77,19 @@ async function indexReservations(){
                 const spaceCity = result.city;
                 const spaceDepartment = result.department;
                 const spaceIdOwner = result.idOwner;
+                console.log("owner",i," => ",spaceIdOwner);
 
                         if (spaceIdOwner === userOnlineId) {
             
-                            tableReservation.innerHTML = `
-                                <table class="table table-striped table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Email usuario solicitante</th>
-                                            <th scope="col">Teléfono</th>
-                                            <th scope="col">Fecha inicio de reserva</th>
-                                            <th scope="col">Fecha Final de reserva</th>
-                                            <th scope="col">Dirección de espacio solicitado</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>${userEmail}</td>
-                                            <td>${userPhone}</td>
-                                            <td>${element.dateStart}</td>
-                                            <td>${element.dateEnd}</td>
-                                            <td>${spaceAddress}, ${spaceCity}, ${spaceDepartment}</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            tableReservation.innerHTML += `
+                                <tr>
+                                <td>${element.actualDate}</td>
+                                <td>${userEmail}</td>
+                                <td>${userPhone}</td>
+                                <td>${element.dateStart}</td>
+                                <td>${element.dateEnd}</td>
+                                <td>${spaceAddress}, ${spaceCity}, ${spaceDepartment}</td>
+                            </tr>
                             `
 
                         }
