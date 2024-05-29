@@ -9,6 +9,7 @@ import "../scss/styles.scss";
 import { index, header, footer, deleteMySpace, searchMySpace, } from "./mySpaceOperations.js";
 import { getUrlReservations, getUrlSpaces, getUrlUsers } from "./urlData.js"
 
+
 // import library for json-server
 import i18next from 'i18next';
 import Backend from 'i18next-http-backend'
@@ -33,7 +34,7 @@ let card = "";
 // inserting data into body
 header(tagheader);
 navBar = document.querySelector(".navbar");
-footer(footerM);
+footer(footerM)
 await index(URLSpaces, articleMySpace);
 
 
@@ -66,11 +67,6 @@ navBar.addEventListener('click', (event) => {
     }
 })
 
-footer.innerHTML = `
-    <div class="footerr">
-        <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
-    </div>
-`;
 
 async function indexReservations() {
 

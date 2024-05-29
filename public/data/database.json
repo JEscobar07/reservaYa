@@ -41,6 +41,12 @@
       "email": "iza@gmail.com",
       "phone": "3214569874",
       "password": "iza123"
+    },
+    {
+      "id": "2260",
+      "email": "aaaa@gmail.com",
+      "phone": "33232",
+      "password": "aaaaa"
     }
   ],
   "spaces": [
@@ -169,7 +175,8 @@
       "dateEnd": "2024-05-30",
       "maxPeople": "22",
       "eventType": "Despedida",
-      "actualDate": "2024 - 5 - 28"
+      "actualDate": "2024 - 5 - 28",
+      "idOwner": "2"
     }
   ]
 }

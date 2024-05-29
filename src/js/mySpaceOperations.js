@@ -69,10 +69,9 @@ export async function index(URLSpaces, articleMySpace) {
 
 export async function footer(footer){
     footer.innerHTML = `
-    <div class="footerr">
-        <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
-    </div>
-`;
+    <div class="section__footer">
+        <p class="text-wrap fs-4">© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
+    </div>`;
 }
 
 export async function deleteMySpace(URLSpaces, id) {

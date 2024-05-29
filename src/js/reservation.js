@@ -7,6 +7,9 @@ Fecha: 16/05/2024
 // Import our custom CSS
 import "../scss/styles.scss";
 import "../scss/publish.scss"
+import "../js/alerts.js"
+import { alert } from "./alerts.js";
+import { alertNegative } from "./alerts.js";
 
 // import library for json-server
 import i18next from 'i18next';
@@ -79,16 +82,33 @@ sectionForm.innerHTML = `
                         </select>
                     </div>
                     <button type="submit"
-                        class="btn btn-primary rounded-pill w-100 p-2 fs-2 btn-form-publish">Enviar</button>
+                        id="reservationn" class="btn btn-primary rounded-pill w-100 p-2 fs-2 btn-form-publish">Enviar</button>
                 </div>
             </form>
 `
 
 footer.innerHTML = `
-    <div class="footerr">
-        <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
+    <div class="section__footer">
+        <p class="text-wrap fs-4">© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
     </div>
     `
+
+    const hola = document.getElementById("reservationn")
+
+    // h.addEventListener("click", (event)=>{
+    //     event.preventDefault()
+    //     alert("hola")
+    //     setTimeout(() => {
+            
+    //         window.location.href = event.target.href
+    //     }, 3000);
+    
+    
+    // })
+    
+
+
+
 
 //Listening to events
 btnMySpace = document.querySelector(".btn-mySpace")
