@@ -22,7 +22,7 @@
       "id": "40f0",
       "email": "jonathan@gmaiil.com",
       "phone": "",
-      "password": "$;ENm9Jg7mGXJ\"$"
+      "password": "123"
     },
     {
       "id": "a472",
@@ -114,161 +114,22 @@
       "id": "d336"
     },
     {
-      "spaceType": "Sala de la casa de joan jsadl;kf;jdsakl",
-      "adress": "calle 32 #51a - 21",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "5",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "id": "63af"
-    },
-    {
-      "spaceType": "Sala de la casa de la mama d de joan y toda su familia",
-      "adress": "calle 32 #51a - 21",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "5",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "id": "ff90"
-    },
-    {
-      "spaceType": "Sala de la casa de joan jsadl;kf;jdsakl",
+      "spaceType": "Sala de mario",
       "adress": "calle 32 #51a - 21 333333",
       "city": "Bello",
       "department": "Antioquia",
-      "maximumCapacity": "5",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "id": "19a3"
+      "maximumCapacity": "222",
+      "photos": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-1.jpg",
+      "id": "cd25"
     },
     {
-      "spaceType": "Fiestas",
-      "adress": "caaalle",
+      "id": "04f8",
+      "spaceType": "Evento religioso",
+      "adress": "Diagonal 32 # 29c -2",
       "city": "itagui",
-      "department": "su mama",
-      "maximumCapacity": "1000",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5grzmUbSXIFyLUsbEL47GXFQ7to7WOpiz_w&s",
-      "id": "7cbb"
-    },
-    {
-      "spaceType": "Fiestas",
-      "adress": "caaalle",
-      "city": "itagui",
-      "department": "su mama",
-      "maximumCapacity": "1000323",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5grzmUbSXIFyLUsbEL47GXFQ7to7WOpiz_w&s",
-      "id": "298b"
-    },
-    {
-      "spaceType": "Sala de la casa de la mama d de joan y toda su familia",
-      "adress": "calle 32 #51a - 21",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "522",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "id": "f31c"
-    },
-    {
-      "spaceType": "Sala de la casa de joan jsadl;kf;jdsakl",
-      "adress": "calle 32 #51a - 24444",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "22222",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "id": "a00a"
-    },
-    {
-      "spaceType": "Sala de la casa de joan jsadl;kf;jdsakl",
-      "adress": "calle 32 #51a - 21 333333",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "5333",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "id": "2aac"
-    },
-    {
-      "spaceType": "Fiestas aaaaaa",
-      "adress": "caaalle",
-      "city": "itagui",
-      "department": "su mama",
-      "maximumCapacity": "1000323",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5grzmUbSXIFyLUsbEL47GXFQ7to7WOpiz_w&s",
-      "id": "82c5"
-    },
-    {
-      "spaceType": "Sala de la casa de la mama d de joan y toda su familia",
-      "adress": "calle 32 #51a - 21",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "5223",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "id": "5b93"
-    },
-    {
-      "id": "4fd1",
-      "spaceType": "Sala de la casa de joan jsadl;kf;jdsakl",
-      "adress": "calle 32 #51a - 24444",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "22222",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "idOwner": "9eb4"
-    },
-    {
-      "spaceType": "Sala de la casa de joan jsadl;kf;jdsakl",
-      "adress": "calle 32 #51a - 21 333333",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "5333331",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "id": "76f6"
-    },
-    {
-      "id": "3250",
-      "spaceType": "Fiestas aaaaaa",
-      "adress": "caaalle",
-      "city": "itagui",
-      "department": "su mama",
-      "maximumCapacity": "1000323",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5grzmUbSXIFyLUsbEL47GXFQ7to7WOpiz_w&s",
-      "idOwner": "9eb4"
-    },
-    {
-      "id": "cd25",
-      "spaceType": "Sala de la casa de joan jsadl;kf;jdsakl",
-      "adress": "calle 32 #51a - 21 333333",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "5333331",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "idOwner": "9eb4"
-    },
-    {
-      "id": "2d5b",
-      "spaceType": "asdf",
-      "adress": "a",
-      "city": "a",
-      "department": "a",
-      "maximumCapacity": "213",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5q_B_DtnEOjd43ovlBJeOq54t7pTNGhAsJw&s",
-      "idOwner": "9eb4"
-    },
-    {
-      "spaceType": "Sala de la casa de la mama d de joan y toda su familiaaaa",
-      "adress": "calle 32 #51a - 21",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "5223",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
-      "id": "7286"
-    },
-    {
-      "id": "b3b8",
-      "spaceType": "Sala de la casa de la mama d de joan y toda su familiaaaa",
-      "adress": "calle 32 #51a - 21",
-      "city": "Bello",
-      "department": "Antioquia",
-      "maximumCapacity": "5223",
-      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
+      "department": "antioquia",
+      "maximumCapacity": "12",
+      "photos": "https://www.ciencuadras.com/blog/wp-content/uploads/2022/08/Barrio-Manrique-Medellin.jpg",
       "idOwner": "9eb4"
     }
   ]
