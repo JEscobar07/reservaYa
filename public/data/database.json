@@ -141,14 +141,13 @@
       "id": "12c2"
     },
     {
-      "id": "6ce7",
-      "spaceType": "Retiro espiritual",
-      "adress": "Diagonal 32 #51 - 23",
-      "city": "bello",
-      "department": "antioquia",
-      "maximumCapacity": "100",
-      "photos": "https://www.arabianbusiness.com/cloud/2023/10/09/Ohana-by-The-Sea-development.jpg",
-      "idOwner": "2"
+      "spaceType": "Salón de eventos",
+      "adress": "Calle 5 #43-19",
+      "city": "Fredonia",
+      "department": "Antioquia",
+      "maximumCapacity": "210",
+      "photos": "https://previews.123rf.com/images/artserstudio/artserstudio1612/artserstudio161200001/67201700-gran-y-c%C3%B3modo-sal%C3%B3n-con-interior-blanco-en-mansi%C3%B3n-de-lujo.jpg",
+      "id": "e07e"
     }
   ],
   "reservations": [

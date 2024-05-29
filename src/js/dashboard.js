@@ -47,6 +47,7 @@ async function index() {
 }
 await index();
 
+//Function for reservation
 cardsReservation.addEventListener('click', (e) => {
     if (e.target.classList.contains("btn-reservation")) {
         const id = e.target.getAttribute('data-id')

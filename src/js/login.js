@@ -3,6 +3,14 @@ Clan: Clan Gates
 Grupo: Charlie
 Fecha: 16/05/2024
 */
+//Autoejecutable function
+(function () {
+    const userOnline = localStorage.getItem("userOnlinne")
+
+if (userOnline !== null) {
+    window.location.href = "./src/pages/dashboard.html"
+}
+})()
 
 // Import our custom CSS
 import "../scss/styles.scss";
@@ -79,21 +87,15 @@ footer.innerHTML = `
     <div class="footerr">
         <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
     </div>
-    `
+`
 
+//data manipulation
 const URL = getUrlUsers();
-const form = document.querySelector("#login-form"); //data manipulation
+const form = document.querySelector("#login-form"); 
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 
-(function () {
-    const userOnline = localStorage.getItem("userOnlinne")
-
-if (userOnline !== null) {
-    window.location.href = "./src/pages/dashboard.html"
-}
-})()
-
+//Event for create and delete reservations
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
     const user = await checkEmail(email)
@@ -109,6 +111,7 @@ form.addEventListener('submit', async (event) => {
     }
 })
 
+//Validation of repeat email
 async function checkEmail(email) {
     const response = await fetch(`${URL}?email=${email.value}`)
     const data = await response.json()
@@ -120,8 +123,3 @@ async function checkEmail(email) {
         return false
     }
 }
-
-
-
-
-

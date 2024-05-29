@@ -31,7 +31,6 @@ let navBar = "";
 let card = "";
 
 // inserting data into body
-
 header(tagheader);
 navBar = document.querySelector(".navbar");
 footer(footerM);
@@ -108,6 +107,7 @@ async function indexReservations() {
     })
 }
 
+// get booking users
 async function getUsersReservation(idUserReservation, URLUsers) {
     const response = await fetch(`${URLUsers}`)
     const data = await response.json()
@@ -124,6 +124,7 @@ async function getUsersReservation(idUserReservation, URLUsers) {
     return dataUser;
 }
 
+//obtain booking slots
 async function getSpaceReservation(idSpaceReservation, URLSpaces) {
     const response = await fetch(`${URLSpaces}`)
     const data = await response.json()
