@@ -6,35 +6,53 @@ Fecha: 16/05/2024
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <!-- Project metadata -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Plataforma de reserva en línea que facilita la gestión de espacios para diversas actividades. Desde eventos recreativos hasta eventos organizacionales, reservaYa permite a compañías y personas independientes subir sus espacios disponibles, que luego pueden ser alquilados por otras personas y empresas según sus necesidades." />
-  <meta name="keywords"
-    content="Jonathan, Escobar, David, Medina, Natalia, Chica, Alejo, Castrillon, JEscobar07, CODEALEJO, medi77na, natacrdz, reservas, espacios, personas, compañias, alquiler, eventos, lugares" />
-  <meta name="sitedomain" content="https://reservaYa.com/" />
-  <meta name="organization" content="RIWI_GATES" />
-  <meta name="author"
-    content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez" />
-  <meta name="designer"
-    content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez" />
-  <meta name="copyright" content="© 2024 Riwi. Todos los derechos reservados." />
-  <meta name="robots" content="index,follow" />
-  <meta name="googlebot" content="index,follow" />
-  <meta name="revisit-after" content="15days" />
-  <link rel="shortcut icon" href="./public/icons/favicon.ico" type="image/x-icon" />
-  <title>ReservaYa</title>
-</head>
+  <head>
+    <!-- Project metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Plataforma de reserva en línea que facilita la gestión de espacios para diversas actividades. Desde eventos recreativos hasta eventos organizacionales, reservaYa permite a compañías y personas independientes subir sus espacios disponibles, que luego pueden ser alquilados por otras personas y empresas según sus necesidades."
+    />
+    <meta
+      name="keywords"
+      content="Jonathan, Escobar, David, Medina, Natalia, Chica, Alejo, Castrillon, JEscobar07, CODEALEJO, medi77na, natacrdz, reservas, espacios, personas, compañias, alquiler, eventos, lugares"
+    />
+    <meta name="sitedomain" content="https://reservaYa.com/" />
+    <meta name="organization" content="RIWI_GATES" />
+    <meta
+      name="author"
+      content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez"
+    />
+    <meta
+      name="designer"
+      content="Jonathan Escobar Molina, David Steven Medina Urrego, Alejandro Castrillón Gómez, Natalia Chica Rodríguez"
+    />
+    <meta
+      name="copyright"
+      content="© 2024 Riwi. Todos los derechos reservados."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
+    <link
+      rel="shortcut icon"
+      href="./public/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>ReservaYa</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
 
 <body>
   <!-- Page header section -->
   <header>
     <!-- Navigation bar -->
     <nav class="container navbar navbar-expand-lg fixed-top mt-2 rounded-pill">
-      <button type="button" id="mySpace">mySpace</button>
       <div class="container-fluid px-4">
         <a href="./index.html" class="nav__a">
           <img src="./public/img/logoReservaYa.webp" class="img-fluid w-75 float-start logo__img"
@@ -51,12 +69,6 @@ Fecha: 16/05/2024
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 gap-4 pe-3">
-              <li class="nav-item">
-                <a class="nav-link rounded active fs-5" aria-current="page" href="#">Buscar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link rounded active fs-5" href="#">Publicar</a>
-              </li>
             </ul>
             <ul class="navbar-nav flex-grow-1 justify-content-end">
               <li class="nav-item">
@@ -80,14 +92,13 @@ Fecha: 16/05/2024
         </div>
         <div class="mx-5 hero-section__container-text">
           <h1 class="fw-bolder display-1 hero-section__container-text__title mb-4">
-            Reserva Ahora
+            ReservaYa
           </h1>
           <p class="fs-3 mb-4 hero-section__container-text__text">
-            Descubre y reserva una amplia gama de espacios únicos con
-            ReservaYa. ¡Un nuevo lugar te espera!
+            Descubre una amplia gama de espacios para cualquier ocasión. ¡Un nuevo lugar te espera!
           </p>
           <button class="py-3 px-4 rounded-5 fs-4 fw-bold hero-section__container-text__buttom border-0">
-            Empieza Ya
+            Iniciar
           </button>
         </div>
       </article>
@@ -108,7 +119,7 @@ Fecha: 16/05/2024
             </p>
             <p class="fs-4">
               Nuestros anfitriones detallan cada rincón de sus espacios para
-              que puedas encontrar el lugar perfecto para tu próxima aventura.
+              que puedas encontrar el lugar perfecto para cada momento.
             </p>
             <p class="fs-4">
               ¡Únete a nuestra comunidad y comienza a explorar hoy mismo!
@@ -123,32 +134,30 @@ Fecha: 16/05/2024
       <article class="container-xxl m-1 d-flex flex-column article-highlights flex-wrap">
         <article class="text-center">
           <h2 class="highlights__h2 fw-bold m-5 fs-1">
-            Lugares <br />
-            Destacados
+            Aquí puedes
           </h2>
         </article>
         <article class="d-flex gap-3 justify-content-between flex-wrap highlights__cards">
           <div class="card border-0 my-2 py-2 highlights__card">
-            <img src="./public/img/meetingHall.webp" class="card-img-top img-fluid highlights__card-img rounded-4"
+            <img src="./public/img/meetingHall.webp" class="card-img-top img-fluid highlights__card-img rounded-4 "
               alt="..." />
             <div class="card-body mt-2 mb-5">
-              <h3 class="card-title highlights__card-h3">Publica</h3>
+              <h3 class="card-title highlights__card-h3">Publicar</h3>
               <p class="card-text">
-                Crea perfiles detallados de tus espacios para atraer a
-                huéspedes.
+                Crea perfiles detallados de tus espacios para atraer clientes.
               </p>
-              <a href="#" class="rounded-pill mt-4 nav__a-btn">Ver detalles</a>
+              <a href="#" class="rounded-pill mt-4 nav__a-btn">Ir</a>
             </div>
           </div>
           <div class="card border-0 my-2 py-2 highlights__card">
             <img src="./public/img/cooworking.webp" class="card-img-top highlights__card-img rounded-4" alt="..." />
             <div class="card-body mt-2 mb-5">
-              <h3 class="card-title highlights__card-h3">Busca</h3>
+              <h3 class="card-title highlights__card-h3">Buscar</h3>
               <p class="card-text">
-                Encuentra el espacio ideal para tu próxima escapada con
+                Descubre el espacio ideal para tu próximo evento con
                 facilidad.
               </p>
-              <a href="#" class="rounded-pill mt-4 nav__a-btn">Ver detalles</a>
+              <a href="#" class="rounded-pill mt-4 nav__a-btn">Encontrar</a>
             </div>
           </div>
           <div class="card border-0 my-2 py-2 highlights__card">
@@ -159,7 +168,7 @@ Fecha: 16/05/2024
                 Deja tus comentarios y comparte tus experiencias con nuestra
                 comunidad.
               </p>
-              <a href="#" class="rounded-pill mt-4 nav__a-btn">Ver detalles</a>
+              <a href="#" class="rounded-pill mt-4 nav__a-btn">Ver</a>
             </div>
           </div>
         </article>
@@ -174,20 +183,19 @@ Fecha: 16/05/2024
         </div>
         <div class="d-flex flex-wrap justify-content-between my-5 gap-4">
           <div class="opinions__div mb-5 fs-5">
-            <p class="text-wrap">¡Increíble plataforma! Encontré el lugar perfecto para mis vacaciones. ¡Gracias
+            <p class="text-wrap">¡Increíble plataforma! Encontré el lugar perfecto para el evento empresarial. ¡Gracias
               ReservaYa!</p>
             <img src="./public/img/user1.webp" class="opinions__img my-4" alt="">
             <h3>María González</h3>
           </div>
           <div class="opinions__div mb-5 fs-5">
-            <p class="text-wrap">ReservaYa hizo que mi experiencia de reserva fuera increíblemente fácil. ¡Altamente
+            <p class="text-wrap">ReservaYa hizo fácil el proceso de búsqueda y alquiler, una experiencia increíble ¡Altamente
               recomendado!</p>
             <img src="./public/img/user2.webp" class="opinions__img my-4" alt="">
             <h3>Juan Pérez</h3>
           </div>
           <div class="opinions__div mb-5 fs-5">
-            <p class="text-wrap">¡Los espacios en ReservaYa son únicos y sorprendentes! Definitivamente volveré a
-              reservar.</p>
+            <p class="text-wrap">¡Los espacios en ReservaYa son únicos y sorprendentes! Definitivamente será la primera opción para encontrar mi espacio ideal.</p>
             <img src="./public/img/user3.webp" class="opinions__img my-4" alt="">
             <h3>Laura Martínez</h3>
           </div>
@@ -307,12 +315,12 @@ Fecha: 16/05/2024
             </h2>
             <p class="fs-3 text-center">
               Explora una amplia variedad de espacios disponibles para tu
-              próxima reserva. ¡Encuentra el lugar ideal para tu evento y vive
+              próxima reserva. ¡Encuentra el lugar ideal para cada evento y vive
               una experiencia inolvidable!
             </p>
             <div class="d-flex justify-content-center p-3">
               <button class="btn-section0006 btn-lg rounded-pill border-0 fs-4 fw-bold p-4">
-                Reservar
+                Quiero agendar
               </button>
             </div>
           </article>
@@ -320,24 +328,49 @@ Fecha: 16/05/2024
       </div>
     </section>
 
-    <!-- Section 7 (form) of the main body -->
-    <section id="form" class="form-section">
-      <h2 class="display-5 text-center form-section__title fw-bold">
-        ¿Presentas alguna novedad en la plataforma? ¡Comunícate con nosotros!
-      </h2>
-      <article class="form__container fs-5 fw-bold">
-        <div class="w-100 form__container-split">
-          <input type="text" placeholder="Nombre" class="form__container-split-item" />
-          <input type="number" placeholder="Teléfono" class="form__container-split-item" />
-        </div>
-        <input type="email" placeholder="Email" class="form__container-item" />
-        <input type="text" placeholder="Mensaje" class="form__container-item" />
-        <button type="submit" class="py-3 px-4 rounded-5 fs-4 fw-bold form-section__container-text__buttom border-0"
-          placeholder="">
-          Enviar Mensaje
-        </button>
-      </article>
-    </section>
+      <!-- form section -->
+      <section id="form" class="form-section">
+        <h2 class="display-5 text-center form-section__title fw-bold">
+          ¿Presentas alguna novedad en la plataforma? ¡Comunícate con nosotros!
+        </h2>
+        <article class="form__container fs-5 fw-bold">
+          <div class="w-100 form__container-split">
+            <input
+              type="text"
+              id="nameInput"
+
+              placeholder="Nombre"
+              class="form__container-split-item"
+            />
+            <input
+              type="number"
+              id="phoneInput"
+              placeholder="Teléfono"
+              class="form__container-split-item"
+            />
+          </div>
+          <input
+            type="email"
+            id="emailInput"
+            placeholder="Email"
+            class="form__container-item"
+          />
+          <input
+            type="text"
+            id="messageInput"
+            placeholder="Mensaje"
+            class="form__container-item"
+          />
+          <button
+            type="submit"
+            id="sendButton"
+            class="py-3 px-4 rounded-5 fs-4 fw-bold form-section__container-text__buttom"
+            placeholder=""
+          >
+            Enviar Mensaje
+          </button>
+        </article>
+      </section>
 
     <!-- Section 8 (social media) of the main body -->
     <section class="py-5">
@@ -359,8 +392,8 @@ Fecha: 16/05/2024
   <!-- Project footer section -->
   <footer></footer>
 
-  <!-- Main JavaScript module for the project -->
-  <script type="module" src="./src/js/main.js"></script>
-</body>
-
+    <!-- Main JavaScript module for the project -->
+    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/email.js"></script>
+  </body>
 </html>

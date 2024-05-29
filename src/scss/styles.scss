@@ -324,8 +324,8 @@ Fecha: 16/05/2024
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 100px;
     background-color: var(--gray);
-
 }
 
 .form-section__title {
@@ -346,6 +346,7 @@ Fecha: 16/05/2024
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .form__container-split-item {
@@ -363,15 +364,22 @@ Fecha: 16/05/2024
         cursor: pointer;
     }
 
+    @media (max-width: 1050px) {
+        width: 100%;
+        &:nth-child(1){
+            margin-bottom: 1rem;
+        }
+    }
+
 }
 
 .form__container-item {
-    width: 100%;
+    width: 50%;
     border-radius: 25px;
     border: none;
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
     background-color: var(--white);
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
 
@@ -385,6 +393,7 @@ Fecha: 16/05/2024
 .form-section__container-text__buttom {
     background-color: var(--blue);
     color: var(--white);
+    width: 50%;
 }
 
 /*title configuration*/
@@ -405,7 +414,6 @@ Fecha: 16/05/2024
 }
 
 .buttons a {
-
     color: var(--gray);
     line-height: 72px;
     text-align: center;
@@ -436,19 +444,10 @@ Fecha: 16/05/2024
     background-color: var(--black);
     color: var(--white);
     text-align: center;
-    padding-bottom: 15%;
+    padding-bottom: 1%;
     padding-top: 15%;
     font-size: x-large;
 }
-
-// .footerr {
-//     background-color: var(--black);
-//     color: var(--white);
-//     text-align: center;
-//     padding-bottom: 100px;
-//     padding-top: 100px;
-//     font-size: x-large; 
-// }
 
 /*section login page login.thml*/
 .img-login {

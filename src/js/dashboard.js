@@ -1,14 +1,25 @@
+// autoejecutable function
+(function () {
+    const userOnline = localStorage.getItem("userOnline")
+
+if (userOnline == null) {
+    window.location.href = "/"
+}
+})()
+
 // Import our custom CSS. Fancyapps Library
 import { Fancybox } from "@fancyapps/ui";
-import "@fancyapps/ui/dist/fancybox/fancybox.css";
-
 import { getUrlSpaces } from "./urlData";
 
 
 const cardsReservation = document.querySelector(".container__cards-reservations");
-
 const URLSpaces = getUrlSpaces();
 
+const btnLogout = document.querySelector("#btn-logout")
+btnLogout.addEventListener("click", () => {
+    localStorage.removeItem("userOnline")
+    window.location.href = "/"
+}) 
 
 //Function for dashboard 
 async function index() {
@@ -28,7 +39,7 @@ async function index() {
                         <h5 class="card-title fs-2 mb-2">${element.spaceType}</h5>
                         <p class="card-text"><span class="fw-semibold">Dirección: </span>${element.adress}, ${element.city}, ${element.department}.</p>
                         <p class="card-text"><span class="fw-semibold">Aforo máximo: </span>${element.maximumCapacity} personas.</p>
-                        <a href="./src/pages/login.html" data-id = "${element.id}" class="rounded-pill nav__a-btn">Reservar</a>
+                        <a href="./reservation.html" data-id = "${element.id}" class="rounded-pill nav__a-btn">Reservar</a>
                     </div>
                 </div>
         `
