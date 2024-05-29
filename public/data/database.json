@@ -177,6 +177,16 @@
       "eventType": "Despedida",
       "actualDate": "2024 - 5 - 28",
       "idOwner": "2"
+    },
+    {
+      "id": "4740",
+      "idRequestingUser": "9eb4",
+      "idSpace": "1",
+      "dateStart": "2024-05-23",
+      "dateEnd": "2024-06-08",
+      "maxPeople": "22",
+      "eventType": "Despedida",
+      "actualDate": "2024 - 5 - 29"
     }
   ]
 }

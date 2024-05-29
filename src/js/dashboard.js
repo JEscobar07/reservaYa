@@ -10,6 +10,9 @@ if (userOnline == null) {
 // Import our custom CSS. Fancyapps Library
 import { Fancybox } from "@fancyapps/ui";
 import { getUrlSpaces } from "./urlData";
+import "./alerts.js"
+import { alert } from "./alerts.js";
+import { alertNegative } from "./alerts.js";
 
 
 const cardsReservation = document.querySelector(".container__cards-reservations");
@@ -17,15 +20,13 @@ const URLSpaces = getUrlSpaces();
 
 const btnLogout = document.querySelector("#btn-logout")
 btnLogout.addEventListener("click", (event) => {
-    swal({
-        title: 'Error!',
-        text: 'Do you want to continue',
-        type: 'error',
-        confirmButtonText: 'Cool'
-    })
-    event.preventDefault()
+    event.preventDefault();
+    alertNegative("Hasta luego")
+    setTimeout(() => {
+        window.location.href = "/"
+        window.location.href = "./dashboard.html"
+    },  2000);
     localStorage.removeItem("userOnline")
-    window.location.href = "/"
 }) 
 
 //Function for dashboard 
