@@ -1,14 +1,33 @@
+// autoejecutable function
+(function () {
+    const userOnline = localStorage.getItem("userOnline")
+
+if (userOnline == null) {
+    window.location.href = "/"
+}
+})()
+
 // Import our custom CSS. Fancyapps Library
 import { Fancybox } from "@fancyapps/ui";
-import "@fancyapps/ui/dist/fancybox/fancybox.css";
-
 import { getUrlSpaces } from "./urlData";
+import "./alerts.js"
+import { alert } from "./alerts.js";
+import { alertNegative } from "./alerts.js";
 
 
 const cardsReservation = document.querySelector(".container__cards-reservations");
-
 const URLSpaces = getUrlSpaces();
 
+const btnLogout = document.querySelector("#btn-logout")
+btnLogout.addEventListener("click", (event) => {
+    event.preventDefault();
+    alertNegative("Hasta luego")
+    setTimeout(() => {
+        window.location.href = "/"
+        window.location.href = "./dashboard.html"
+    },  2000);
+    localStorage.removeItem("userOnline")
+}) 
 
 //Function for dashboard 
 async function index() {
@@ -20,19 +39,27 @@ async function index() {
         cardsReservation.innerHTML += `
                 <div class="card text-center my-5 rounded cards__reservation">
                     <div class="reservation__carousel-img mb-3" id="${i}">
-                        <a data-fancybox data-src="${element.photos[0]}">
-                            <img src="${element.photos[0]}" class="d-block w-100 rounded" alt="...">
+                        <a data-fancybox data-src="${element.photos}">
+                            <img src="${element.photos}" class="d-block w-100 rounded" alt="...">
                         </a>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title fs-2 mb-2">${element.spaceType}</h5>
                         <p class="card-text"><span class="fw-semibold">Dirección: </span>${element.adress}, ${element.city}, ${element.department}.</p>
                         <p class="card-text"><span class="fw-semibold">Aforo máximo: </span>${element.maximumCapacity} personas.</p>
-                        <a href="./src/pages/login.html" data-id = "${element.id}" class="rounded-pill nav__a-btn">Reservar</a>
+                        <a data-id="${element.id}" class="rounded-pill nav__a-btn btn-reservation">Reservar</a>
                     </div>
                 </div>
         `
     })
 }
-
 await index();
+
+//Function for reservation
+cardsReservation.addEventListener('click', (e) => {
+    if (e.target.classList.contains("btn-reservation")) {
+        const id = e.target.getAttribute('data-id')
+        localStorage.setItem('spaceId', id);
+        window.location.href = `./reservation.html`
+    }
+})
