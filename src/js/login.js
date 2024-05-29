@@ -3,10 +3,21 @@ Clan: Clan Gates
 Grupo: Charlie
 Fecha: 16/05/2024
 */
+//Autoejecutable function
+(function () {
+    const userOnline = localStorage.getItem("userOnlinne")
+
+if (userOnline !== null) {
+    window.location.href = "./src/pages/dashboard.html"
+}
+})()
 
 // Import our custom CSS
 import "../scss/styles.scss";
 import { getUrlUsers } from "./urlData";
+import "./alerts.js"
+import { alert } from "./alerts.js";
+import { alertNegative } from "./alerts.js";
 
 // import library for json-server
 import i18next from 'i18next';
@@ -55,60 +66,73 @@ header.innerHTML = `
 `
 
 form2.innerHTML = `
-<article class="d-flex justify-content-around p-5">
-<div class="p-2 mx-3 ">
-    <img src="../../public/img/imglogin.webp" class="img-login" alt="img-sect-login">
-</div>
-<div class="form-login p-2 mx-3 fs-5 fw-bold col-12 col-lg item-wrapper">
-    <h3 class="display-5 text-center fw-bold">Login</h3>
-    <a href="../pages/register.html" class="register-login text-center text-decoration-none">Registrarse</a>
-    <form class="text-center" id="login-form">
-        <div class="w-100 gap-3 form__container-split">
-            <input type="email" placeholder="Email" id="email" class="input-login" />
-            <input type="password" placeholder="Contraseña" id="password" class="input-login" />
-        </div>
-        <button type="submit" class="btn-section0006 mt-4 py-3 px-4 rounded-5 fs-5 fw-bold border-0"
-            placeholder="">Ingresar                     
-        </button>
-    </form>
-</div>
-</article>
+<section class="container">
+    <div class="row justify-content-center">
+        <article class="col-md-5">
+            <img src="../../public/img/imglogin.webp" class="img-login img-fluid" alt="Imagen de inicio de sesión">
+        </article>
+        <article class="col-md-6 ">
+            <div class="form-login ">
+                <h3 class="display-5 text-center fw-bold">Login</h3>
+                <a href="../pages/register.html" class="register-login text-center text-decoration-none">Registrarse</a>
+                <form class="text-center" id="login-form">
+                    <div class="mb-3">
+                        <input type="email" placeholder="Email" id="email" class="input-login mb-3 py-1 rounded-pill border-0" />
+                        <input type="password" placeholder="Contraseña" id="password" class="input-login rounded-pill border-0" />
+                    </div>
+                    <button type="submit" id="alert-login" class="btn-section0006 mt-4 py-3 px-4 rounded-5 fs-5 fw-bold border-0">Ingresar</button>
+                </form>
+            </div>
+        </article>
+    </div>
+</section>
 `
 
 footer.innerHTML = `
-    <div class="footerr">
-        <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
+    <div class="section__footer">
+        <p class="text-wrap fs-4">© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
     </div>
-    `
+`
 
+
+//data manipulation
 const URL = getUrlUsers();
-const form = document.querySelector("#login-form"); //data manipulation
+const form = document.querySelector("#login-form"); 
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
+
+//Event for create and delete reservations
 
 (function () {
     const userOnline = localStorage.getItem("userOnlinne")
 
-if (userOnline !== null) {
-    window.location.href = "./src/pages/dashboard.html"
-}
+    if (userOnline !== null) {
+        window.location.href = "./src/pages/dashboard.html"
+    }
 })()
+
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
     const user = await checkEmail(email)
     if (user === false) {
-    }else{
+        alertNegative("Acceso denegado")
+    } else {
         if (user.password === password.value) {
             localStorage.setItem('userOnline', JSON.stringify(user))
-            window.location.href = "/"
-            window.location.href = "./dashboard.html"
-        }else{
-            alert("Wrong password")
+            alert("Bienvenido")
+            setTimeout(() => {
+                window.location.href = "/"
+                window.location.href = "./dashboard.html"
+            }, 2000);
+
+        } else {
+            alertNegative("Error credential")
         }
     }
 })
 
+//Validation of repeat email
 async function checkEmail(email) {
     const response = await fetch(`${URL}?email=${email.value}`)
     const data = await response.json()
@@ -120,8 +144,3 @@ async function checkEmail(email) {
         return false
     }
 }
-
-
-
-
-

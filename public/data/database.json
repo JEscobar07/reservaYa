@@ -2,14 +2,14 @@
   "users": [
     {
       "id": "1",
-      "name": "admin",
       "email": "admin@admin.com",
+      "phone": "123",
       "password": "Qwerty1234*"
     },
     {
       "id": "2",
-      "name": "David Medina",
       "email": "medinastevenurregodavid@gmail.com",
+      "phone": "322655",
       "password": "12345"
     },
     {
@@ -17,30 +17,166 @@
       "email": "jamundi@gmail.com",
       "phone": "123",
       "password": "123"
+    },
+    {
+      "id": "40f0",
+      "email": "jonathan@gmaiil.com",
+      "phone": "",
+      "password": "123"
+    },
+    {
+      "id": "a472",
+      "email": "j123@gmail.com",
+      "phone": "123",
+      "password": "123"
+    },
+    {
+      "id": "49da",
+      "email": "eva@gmail.com",
+      "phone": "315248",
+      "password": "eva123"
+    },
+    {
+      "id": "cd8a",
+      "email": "iza@gmail.com",
+      "phone": "3214569874",
+      "password": "iza123"
+    },
+    {
+      "id": "2260",
+      "email": "aaaa@gmail.com",
+      "phone": "33232",
+      "password": "aaaaa"
     }
   ],
   "spaces": [
     {
       "id": "1",
-      "spaceType": "Salón de eventos",
-      "adress": "Carrera 45",
+      "spaceType": "Reuniones familiares",
+      "adress": "Carrera 45 #32-19",
       "city": "Bogotá",
       "department": "Cundinamarca",
       "maximumCapacity": 320,
-      "photos": [
-        "../../public/img/reservation5.webp"
-      ]
+      "photos": "../../public/img/reservation1.webp",
+      "idOwner": "2"
     },
     {
       "id": "2",
       "spaceType": "Salón de eventos",
-      "adress": "Carrera 45",
+      "adress": "Carrera 120 #32-16",
+      "city": "Bucaramanga",
+      "department": "Santander",
+      "maximumCapacity": 320,
+      "photos": "../../public/img/reservation2.webp",
+      "idOwner": "2"
+    },
+    {
+      "id": "3",
+      "spaceType": "Salón de eventos",
+      "adress": "Avenida 55 #12-84",
+      "city": "Manizales",
+      "department": "Caldas",
+      "maximumCapacity": 320,
+      "photos": "../../public/img/reservation3.webp",
+      "idOwner": "49da"
+    },
+    {
+      "id": "4",
+      "spaceType": "Salón de Bodas",
+      "adress": "Calle 3 #82-19",
       "city": "Bogotá",
       "department": "Cundinamarca",
       "maximumCapacity": 320,
-      "photos": [
-        "../../public/img/reservation5.webp"
-      ]
+      "photos": "../../public/img/reservation4.webp",
+      "idOwner": "49da"
+    },
+    {
+      "spaceType": "Salón de eventos religiosos",
+      "adress": "Carrera 45",
+      "city": "Bogotá",
+      "department": "Cundinamarca",
+      "maximumCapacity": "320",
+      "photos": "../../public/img/reservation5.webp",
+      "id": "5"
+    },
+    {
+      "id": "b5da",
+      "spaceType": "Salón de eventos",
+      "adress": "Calle 5 #32-08",
+      "city": "Bello",
+      "department": "Antioquia",
+      "maximumCapacity": "280",
+      "photos": "https://www.amobladomedellin.co/uploads/2/7/7/3/27738513/1-36-orig.jpg",
+      "idOwner": "cd8a"
+    },
+    {
+      "spaceType": "Sala de la casa de la prima de joan",
+      "adress": "calle 32 #51a - 21",
+      "city": "Bello",
+      "department": "Antioquia",
+      "maximumCapacity": "5",
+      "photos": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdJG0dZz-5mBZF0vSrvAGnkYyGM8dBDUGzevu0diJw&s",
+      "id": "d336"
+    },
+    {
+      "spaceType": "Sala de mario",
+      "adress": "calle 32 #51a - 21 333333",
+      "city": "Bello",
+      "department": "Antioquia",
+      "maximumCapacity": "222",
+      "photos": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-1.jpg",
+      "id": "cd25"
+    },
+    {
+      "id": "d3d4",
+      "spaceType": "Salón de eventos religiosos",
+      "adress": "Carrera 45",
+      "city": "Bogotá",
+      "department": "Cundinamarca",
+      "maximumCapacity": "320",
+      "photos": "../../public/img/reservation5.webp",
+      "idOwner": "2"
+    },
+    {
+      "spaceType": "Retiro espiritual",
+      "adress": "Diagonal 32 #51 - 23",
+      "city": "bello",
+      "department": "antioquia",
+      "maximumCapacity": "100",
+      "photos": "https://www.arabianbusiness.com/cloud/2023/10/09/Ohana-by-The-Sea-development.jpg",
+      "id": "12c2"
+    },
+    {
+      "spaceType": "Salón de eventos",
+      "adress": "Calle 5 #43-19",
+      "city": "Fredonia",
+      "department": "Antioquia",
+      "maximumCapacity": "210",
+      "photos": "https://previews.123rf.com/images/artserstudio/artserstudio1612/artserstudio161200001/67201700-gran-y-c%C3%B3modo-sal%C3%B3n-con-interior-blanco-en-mansi%C3%B3n-de-lujo.jpg",
+      "id": "e07e"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "4a07",
+      "idRequestingUser": "49da",
+      "idSpace": "3",
+      "dateStart": "2024-06-08",
+      "dateEnd": "2024-06-10",
+      "maxPeople": "200",
+      "eventType": "Aniversario",
+      "actualDate": "2024 - 5 - 28"
+    },
+    {
+      "id": "d292",
+      "idRequestingUser": "49da",
+      "idSpace": "1",
+      "dateStart": "2024-05-21",
+      "dateEnd": "2024-05-30",
+      "maxPeople": "22",
+      "eventType": "Despedida",
+      "actualDate": "2024 - 5 - 28",
+      "idOwner": "2"
     }
   ]
 }

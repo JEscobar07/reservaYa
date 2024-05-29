@@ -7,7 +7,6 @@ Fecha: 16/05/2024
 // Import our custom CSS
 import "../scss/styles.scss";
 import { getUrlUsers } from "./urlData";
-
 // import library for json-server
 import i18next from 'i18next';
 import Backend from 'i18next-http-backend'
@@ -60,14 +59,14 @@ form2.innerHTML = `
 <h1 class="text-center pb-3 section-register-form-h1">Registro</h1>
 <div class="d-flex flex-wrap justify-content-around m-3">
     <div class="mb-3 section-register-div">
-        <input type="email" class="form-control rounded-pill section-register-input p-4 fs-3" id="email-register" placeholder="Email">
+        <input type="email" class="form-control rounded-pill section-register-input p-4 fs-3" required id="email-register" placeholder="Email">
     </div>
     <div class="mb-3 section-register-div ">
-        <input type="text" class="form-control rounded-pill p-4 fs-3 section-register-input" id="phone-register" placeholder="Phone">
+        <input type="number" class="form-control rounded-pill p-4 fs-3 section-register-input" required id="phone-register" placeholder="Phone">
     </div>
 
     <div class="mb-3 section-register-div section-register-input3">
-        <input type="password" class="form-control rounded-pill p-4 fs-3 section-register-input" id="password-register"
+        <input type="password" class="form-control rounded-pill p-4 fs-3 section-register-input" required id="password-register"
             placeholder="Password">
     </div>
 </div>
@@ -78,10 +77,10 @@ form2.innerHTML = `
 `
 
 footer.innerHTML = `
-    <div class="footerr">
-        <p>© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
+    <div class="section__footer">
+        <p class="text-wrap fs-4">© 2024 Reserva Tu Espacio. Todos los derechos reservados.</p>
     </div>
-    `
+`
 
 const form = document.querySelector("#register-form"); //data manipulation
 const email = document.querySelector("#email-register");
@@ -98,7 +97,6 @@ form.addEventListener("submit", async (e) => {
     }else{
         alert("el email ya existe")
     }
-
 });    
 
 
@@ -116,7 +114,6 @@ async function registerUser(email, phone, password) {
             'Content-type': 'application/json; charset=UTF-8'
         }
     })
-        // .then(response => response.json())
 }
 
 async function checkEmail(email) {
