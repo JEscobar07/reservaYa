@@ -15,7 +15,7 @@ const sendCustomEmail = (plantilla) => {
             text: 'Todos los campos son obligatorios',
             icon: 'error',
             confirmButtonText: 'Ok'
-          })
+        })
 
         return
     }
@@ -40,7 +40,7 @@ const sendCustomEmail = (plantilla) => {
             text: 'Mensaje enviado exitosamente',
             icon: 'success',
             confirmButtonText: 'Excelente!'
-          })
+        })
 
     }).catch((err) => {
         console.log('FAILED...', err);
